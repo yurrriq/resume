@@ -1,0 +1,28 @@
+{
+  "name": "resume-json",
+  "version": "1.0.0",
+  "description": "My resume in JSON Resume format.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yurrriq/resume-json.git"
+  },
+  "keywords": [
+    "resume",
+    "json",
+    "json",
+    "resume",
+    "cv",
+    "curriculum",
+    "vitae"
+  ],
+  "author": "Eric Bailey <eric@ericb.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yurrriq/resume-json/issues"
+  },
+  "homepage": "https://github.com/yurrriq/resume-json#readme"
+}

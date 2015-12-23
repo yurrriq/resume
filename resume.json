@@ -1,0 +1,162 @@
+{
+  "basics": {
+    "name": "Eric Bailey",
+    "label": "Lisp Evangelist",
+    "picture": "http:\/\/2.gravatar.com\/avatar\/6bbb64bfe821e6752be3cf7783805e7b?size=100px",
+    "email": "eric@ericb.me",
+    "phone": "I prefer email.",
+    "degree": "Associate of Fine Arts",
+    "website": "http://blorg.ericb.me",
+    "summary": "Lisp Evangelist at Frontend Masters",
+    "location": {
+      "postalCode": "",
+      "city": "Minneapolis",
+      "countryCode": "",
+      "region": "MN"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "yurrriq",
+        "url": "https://twitter.com/yurrriq"
+      },
+      {
+        "network": "GitHub",
+        "username": "yurrriq",
+        "url": "https://github.com/yurrriq"
+      },
+      {
+        "network": "exercism",
+        "username": "yurrriq",
+        "url": "http://exercism.io/yurrriq"
+      },
+      {
+        "network": "stackexchange",
+        "username": "yurrriq",
+        "url": "http://stackexchange.com/users/1918959/yurrriq"
+      }]
+  },
+  "work": [
+    {
+      "company": "Frontend Masters",
+      "position": "Lisp Evangelist",
+      "website": "http://frontendmasters.com",
+      "startDate": "2015-08-15",
+      "endDate": "",
+      "summary": "iOS ∧ LFE",
+      "highlights": []
+    },
+    {
+      "company": "invisible friend",
+      "position": "Software Engineer",
+      "website": "https://invisiblefriend.com/wtf",
+      "startDate": "2014-05",
+      "endDate": "2015-08",
+      "summary": "As a Software Engineer and half of the core programming team, I was passionate about writing efficient, modular, well-tested code in a very Agile environment, doing whatever it took to get the job done, even if that meant working long hours and weekends.",
+      "highlights": []
+    },
+    {
+      "company": "The Tom Barnard Show App",
+      "position": "Contractor",
+      "website": "https://itunes.apple.com/us/app/official-tom-barnard-podcast/id590280781?mt=8",
+      "startDate": "2012-12",
+      "endDate": "2013-06",
+      "summary": "This app parses JSON-formatted metadata and presents it in a reverse chronological master-detail structure, allowing the user to read summaries, stream podcasts, and share. The iOS version features a custom in-app browser. The Android version was developed incrementally and alternately, and has all of the same features, except where Android-specific UX conventions were judiciously followed.",
+      "highlights": []
+    },
+    {
+      "company": "VoiceHive",
+      "position": "Contractor",
+      "website": "http://www.voicehive.com",
+      "startDate": "2012-08",
+      "endDate": "2013-08",
+      "summary": "Real-time audience interaction web app with charts and customization.",
+      "highlights": []
+    }
+  ],
+  "awards": [],
+  "education": [
+    {
+      "institution": "Century College",
+      "area": "Music",
+      "studyType": "Associate of Fine Arts",
+      "startDate": "2008-09",
+      "endDate": "2013-05",
+      "gpa": "",
+      "courses": [
+        "History",
+        "Theory",
+        "Piano",
+        "Piano Ensemble",
+        "Concert Choir"
+      ]
+    }
+  ],
+  "publications": [],
+  "volunteer": [
+    {
+      "organization": "Arise! Bookstore",
+      "position": "Volunteer",
+      "website": "https://web.archive.org/web/20071009213340/http://www.arisebookstore.org/content/view/12/26/#main",
+      "startDate": "2006",
+      "endDate": "2007",
+      "summary": "",
+      "highlights": []
+    }
+  ],
+  "skills": [
+    {
+      "name": "Server-side Development",
+      "level": "Master",
+      "keywords": [
+        "Clojure",
+        "LFE",
+        "Erlang",
+        "Java",
+        "Node.js",
+        "PHP",
+        "distributed",
+        "fault-tolerant",
+        "functional",
+        "homoiconic",
+        "immutable",
+        "monadic",
+        "metaprogramming",
+        "well-documented"
+      ]
+    },
+    {
+      "name": "Mobile App Development",
+      "level": "Advanced",
+      "keywords": [
+        "iOS",
+        "Swift",
+        "Objective-C",
+        "Android",
+        "Java",
+        "functional",
+        "monadic",
+        "object-oriented"
+      ]
+    },
+    {
+      "name": "Client-side Development",
+      "level": "Intermediate",
+      "keywords": [
+        "CSS",
+        "HTML",
+        "JavaScript"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Proficient"
+    }
+  ]
+}
