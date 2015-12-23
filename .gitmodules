@@ -1,0 +1,4 @@
+[submodule "out"]
+	path = out
+	url = git@github.com:yurrriq/resume.git
+	branch = gh-pages
