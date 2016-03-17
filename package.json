@@ -1,5 +1,5 @@
 {
-  "name": "resume-json",
+  "name": "resume",
   "version": "1.0.0",
   "description": "My resume in JSON Resume format.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/yurrriq/resume-json.git"
+    "url": "git+ssh://git@github.com/yurrriq/resume.git"
   },
   "keywords": [
     "resume",
@@ -22,7 +22,7 @@
   "author": "Eric Bailey <eric@ericb.me>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yurrriq/resume-json/issues"
+    "url": "https://github.com/yurrriq/resume/issues"
   },
-  "homepage": "https://github.com/yurrriq/resume-json#readme"
+  "homepage": "http://yurrriq.codes/resume/"
 }
