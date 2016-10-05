@@ -1,6 +1,6 @@
 {
   "name": "resume",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "My resume in JSON Resume format.",
   "main": "index.js",
   "scripts": {
