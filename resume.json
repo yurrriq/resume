@@ -29,6 +29,7 @@
       "position": "Lisp Evangelist",
       "website": "http://frontendmasters.com",
       "startDate": "2015-08-15",
+      "endDate": "2016-11-01",
       "summary": "iOS ∧ LFE"
     },
     {
@@ -46,6 +47,14 @@
       "startDate": "2012-12-01",
       "endDate": "2013-06-01",
       "summary": "This app parses JSON-formatted metadata and presents it in a reverse chronological master-detail structure, allowing the user to read summaries, stream podcasts, and share. The iOS version features a custom in-app browser. The Android version was developed incrementally and alternately, and has all of the same features, except where Android-specific UX conventions were judiciously followed."
+    },
+    {
+      "company": "Definest",
+      "position": "Freelance iOS Developer",
+      "website": "http://definest.co",
+      "startDate": "2012-12-01",
+      "endDate": "2013-06-01",
+      "summary": "The learn-it-later word journal for quickly expanding your vocabulary."
     },
     {
       "company": "VoiceHive",
