@@ -1,11 +1,8 @@
 {
   "name": "resume",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "My resume in JSON Resume format.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/yurrriq/resume.git"
@@ -25,7 +22,8 @@
     "url": "https://github.com/yurrriq/resume/issues"
   },
   "homepage": "http://yurrriq.codes/resume/",
-  "devDependencies": {
+  "dependencies": {
+    "jsonresume-theme-stackoverflow": "^1.0.4",
     "resume-cli": "^0.4.14"
   }
 }
