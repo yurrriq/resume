@@ -4,12 +4,12 @@
     "label": "Lisp Evangelist",
     "picture": "http:\/\/2.gravatar.com\/avatar\/6bbb64bfe821e6752be3cf7783805e7b?size=100px",
     "degree": "Associate of Fine Arts",
-    "website": "http://blorg.ericb.me",
+    "website": "http://ericb.me",
     "summary": "Lisp Evangelist at Frontend Masters",
     "location": {
       "city": "Minneapolis",
       "countryCode": "USA",
-      "region": "MN"
+      "region": "Minnesota"
     },
     "profiles": [
       {
@@ -21,16 +21,6 @@
         "network": "GitHub",
         "username": "yurrriq",
         "url": "https://github.com/yurrriq"
-      },
-      {
-        "network": "exercism",
-        "username": "yurrriq",
-        "url": "http://exercism.io/yurrriq"
-      },
-      {
-        "network": "stackexchange",
-        "username": "yurrriq",
-        "url": "http://stackexchange.com/users/1918959/yurrriq"
       }]
   },
   "work": [
