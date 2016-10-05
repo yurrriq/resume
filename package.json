@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/yurrriq/resume/issues"
   },
-  "homepage": "http://yurrriq.codes/resume/"
+  "homepage": "http://yurrriq.codes/resume/",
+  "devDependencies": {
+    "resume-cli": "^0.4.14"
+  }
 }
