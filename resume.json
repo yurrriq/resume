@@ -91,6 +91,48 @@
       ]
     },
     {
+      "company": "R.F. Moeller",
+      "position": "Security Consultant",
+      "website": "http://www.rfmoeller.com",
+      "startDate": "2013-08-01",
+      "endDate": "2013-08-07",
+      "summary": "Traced exisiting code to find and patch a SQL-related security hole, protecting sensitive customer information.",
+      "keywords": [
+        "PHP",
+        "MySQL",
+        "security",
+        "legacy",
+        "maintenance"
+      ]
+    },
+    {
+      "company": "Honeywell Lifecycle Solutions",
+      "position": "Web Developer",
+      "startDate": "2013-06-01",
+      "endDate": "2013-06-07",
+      "summary": "Ensured a consistent user experience between XP/IE8 and modern systems for the existing internal kiosk web app.",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "legacy",
+        "short deadline"
+      ]
+    },
+    {
+      "company": "Native Therapy Questions",
+      "position": "Android Developer",
+      "website": "https://play.google.com/store/apps/details?id=com.caspersen.narrative",
+      "startDate": "2013-04-01",
+      "endDate": "2013-05-01",
+      "summary": "Ported an existing interactive Q&A app from iOS.",
+      "keywords": [
+        "Java",
+        "JSON",
+        "data-driven"
+      ]
+    },
+    {
       "company": "The Tom Barnard Show App",
       "position": "{iOS,Android} Developer",
       "website": "https://itunes.apple.com/us/app/official-tom-barnard-podcast/id590280781?mt=8",
