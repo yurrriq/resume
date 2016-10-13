@@ -1,11 +1,9 @@
 {
   "basics": {
     "name": "Eric Bailey",
-    "label": "Lisp Evangelist",
+    "label": "Highly functional yak stylist",
     "picture": "http:\/\/2.gravatar.com\/avatar\/6bbb64bfe821e6752be3cf7783805e7b?size=100px",
-    "degree": "Associate of Fine Arts",
     "website": "http://ericb.me",
-    "summary": "Lisp Evangelist at Frontend Masters",
     "location": {
       "city": "Minneapolis",
       "countryCode": "USA",
@@ -13,14 +11,14 @@
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "yurrriq",
-        "url": "https://twitter.com/yurrriq"
-      },
-      {
         "network": "GitHub",
         "username": "yurrriq",
         "url": "https://github.com/yurrriq"
+      },
+      {
+        "network": "Twitter",
+        "username": "yurrriq",
+        "url": "https://twitter.com/yurrriq"
       },
       {
         "network": "stack overflow",
@@ -31,8 +29,8 @@
   "work": [
     {
       "company": "Frontend Masters",
-      "position": "Lisp Evangelist",
-      "website": "http://frontendmasters.com",
+      "position": "Software Engineer",
+      "website": "https://frontendmasters.com",
       "startDate": "2015-08-15",
       "endDate": "2016-11-01",
       "summary": "iOS ∧ LFE"
@@ -70,7 +68,6 @@
       "summary": "Real-time audience interaction web app with charts and customization."
     }
   ],
-  "awards": [],
   "education": [
     {
       "institution": "Century College",
@@ -87,7 +84,6 @@
       ]
     }
   ],
-  "publications": [],
   "volunteer": [
     {
       "organization": "Arise! Bookstore",
