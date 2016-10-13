@@ -33,7 +33,41 @@
       "website": "https://frontendmasters.com",
       "startDate": "2015-08-15",
       "endDate": "2016-11-01",
-      "summary": "iOS ∧ LFE"
+      "summary": "Starting as an occasional iOS contractor on and off from 2013 to 2015, I joined the company half-time in August 2015 and ramped up to full-time by January 2016. Eventually, my responsibilities shifted from maintaining the iOS app to re-architecting the outdated backend, including codifying the data model, handling DevOps, maintaining parity (as appropriate) with the existing system and designing and building its modular, data-driven successor from scratch.",
+      "keywords": [
+        "Objective-C",
+        "Swift",
+        "Core Data",
+        "video streaming",
+        "DevOps",
+        "CI",
+        "Docker",
+        "LFE",
+        "Erlang",
+        "REST",
+        "data-driven",
+        "documentation"
+      ]
+    },
+    {
+      "company": "Transvoyant",
+      "position": "Web Developer",
+      "website": "https://www.transvoyant.com",
+      "startDate": "2014-11-01",
+      "endDate": "2015-07-01",
+      "summary": "Building on the existing Java-based REST API, I spearheaded development of a new web front end in ClojureScript, based on a design mockup. It featured a customizable, data-driven UI with dynamic rendering and mobile-friendly drag-and-drop mechanics.",
+      "keywords": [
+        "ClojureScript",
+        "React",
+        "data-driven",
+        "modular",
+        "customizable",
+        "mobile",
+        "CSS",
+        "JSON",
+        "REST",
+        "devops"
+      ]
     },
     {
       "company": "invisible friend",
@@ -41,37 +75,75 @@
       "website": "https://invisiblefriend.com/wtf",
       "startDate": "2014-05-01",
       "endDate": "2015-08-01",
-      "summary": "As a Software Engineer and half of the core programming team, I was passionate about writing efficient, modular, well-tested code in a very Agile environment, doing whatever it took to get the job done, even if that meant working long hours and weekends."
+      "summary": "As a Software Engineer and half of the core engineering team, I was passionate about writing efficient, modular, well-tested code in a very agile environment, doing whatever it took to get the job done, even if that meant working long hours and weekends.",
+      "keywords": [
+        "Clojure(Script)",
+        "Node.js",
+        "Chrome",
+        "Docker",
+        "DevOps",
+        "LevelDB",
+        "PostgreSQL",
+        "Datomic",
+        "Redis",
+        "startup",
+        "small team"
+      ]
     },
     {
       "company": "The Tom Barnard Show App",
-      "position": "Freelance iOS/Android Developer",
+      "position": "{iOS,Android} Developer",
       "website": "https://itunes.apple.com/us/app/official-tom-barnard-podcast/id590280781?mt=8",
       "startDate": "2012-12-01",
       "endDate": "2013-06-01",
-      "summary": "This app parses JSON-formatted metadata and presents it in a reverse chronological master-detail structure, allowing the user to read summaries, stream podcasts, and share. The iOS version features a custom in-app browser. The Android version was developed incrementally and alternately, and has all of the same features, except where Android-specific UX conventions were judiciously followed."
+      "summary": "This app parses JSON-formatted metadata and presents it in a reverse chronological master-detail structure, allowing the user to read summaries, stream podcasts, and share. The iOS version features a custom in-app browser. The Android version was developed incrementally and alternately, and has all of the same features, except where Android-specific UX conventions were judiciously followed.",
+      "keywords": [
+        "Objective-C",
+        "Core Data",
+        "Java",
+        "audio streaming",
+        "offline caching",
+        "JSON",
+        "data-driven",
+        "feature parity",
+        "convential UX"
+      ]
     },
     {
       "company": "Definest",
-      "position": "Freelance iOS Developer",
-      "website": "http://definest.co",
+      "position": "iOS Developer",
+      "website": "https://web.archive.org/web/20130711014544/http://definest.co",
       "startDate": "2012-12-01",
       "endDate": "2013-06-01",
-      "summary": "The learn-it-later word journal for quickly expanding your vocabulary."
+      "summary": "The learn-it-later word journal for quickly expanding your vocabulary.",
+      "keywords": [
+        "Objective-C",
+        "Core Data",
+        "gesture-driven UI"
+      ]
     },
     {
       "company": "VoiceHive",
-      "position": "Freelance Web Developer",
-      "website": "http://www.voicehive.com",
+      "position": "Web Developer",
+      "website": "https://www.voicehive.com",
       "startDate": "2012-08-01",
       "endDate": "2013-08-01",
-      "summary": "Real-time audience interaction web app with charts and customization."
+      "summary": "Helped implement and maintain client-requested features in a real-time audience interaction web app.",
+      "keywords": [
+        "PHP",
+        "MySQL",
+        "HTML",
+        "JavaScript",
+        "CSS",
+        "real-time",
+        "data-driven"
+      ]
     }
   ],
   "education": [
     {
       "institution": "Century College",
-      "area": "Music",
+      "area": "in Music",
       "studyType": "Associate of Fine Arts",
       "startDate": "2008-09-07",
       "endDate": "2013-05-10",
@@ -90,29 +162,19 @@
       "position": "Volunteer",
       "website": "https://web.archive.org/web/20071009213340/http://www.arisebookstore.org/content/view/12/26/#main",
       "startDate": "2006-09-01",
-      "endDate": "2007-09-01",
-      "summary": ""
+      "endDate": "2007-09-01"
     }
   ],
   "skills": [
     {
       "name": "Server-side Development",
-      "level": "Master",
+      "level": "Advanced",
       "keywords": [
         "Clojure",
-        "LFE",
-        "Erlang",
-        "Java",
-        "Node.js",
-        "PHP",
-        "distributed",
-        "fault-tolerant",
-        "functional",
-        "homoiconic",
-        "immutable",
-        "monadic",
-        "metaprogramming",
-        "well-documented"
+        "(Lisp Flavoured) Erlang",
+        "RBDMS",
+        "NoSQL",
+        "REST"
       ]
     },
     {
@@ -123,10 +185,7 @@
         "Swift",
         "Objective-C",
         "Android",
-        "Java",
-        "functional",
-        "monadic",
-        "object-oriented"
+        "Java"
       ]
     },
     {
@@ -135,7 +194,10 @@
       "keywords": [
         "CSS",
         "HTML",
-        "JavaScript"
+        "ClojureScript",
+        "JavaScript",
+        "Elm",
+        "PureScript"
       ]
     }
   ],
