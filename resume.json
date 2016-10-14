@@ -240,6 +240,22 @@
       "summary": "Recebí la nota más alta en el examen de idioma español."
     }
   ],
+  "publications": [
+    {
+      "name": "Episode 59 - Eric Bailey",
+      "publisher": "Functional Geekery",
+      "releaseDate": "2016-07-19",
+      "website": "https://www.functionalgeekery.com/episode-59-eric-bailey/",
+      "summary": "\"In this episode... [I] talk [about my] entry into functional programming; work with Scheme, Clojure, Haskell, and LFE; getting into the LFE community; interop story with other BEAM languages; Exercism.io; and much more.\""
+    },
+    {
+      "name": "Know this Nerd? Meet Eric Bailey",
+      "publisher": "TECHdotMN",
+      "releaseDate": "2013-08-21",
+      "website": "http://tech.mn/news/2013/08/21/know-this-nerd-meet-eric-bailey/",
+      "summary": "Casual interview re: my interest in programming and technology."
+    }
+  ],
   "volunteer": [
     {
       "organization": "Arise! Bookstore",
