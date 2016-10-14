@@ -286,6 +286,14 @@
       "website": "https://web.archive.org/web/20071009213340/http://www.arisebookstore.org/content/view/12/26/#main",
       "startDate": "2006-09-01",
       "endDate": "2007-09-01"
+    },
+    {
+      "organization": "UndeadArt.org",
+      "position": "Web Developer",
+      "website": "https://web.archive.org/web/20041213172447/http://undeadart.org/",
+      "startDate": "2004-08-01",
+      "endDate": "2004-10-31",
+      "summary": "My code passed W3C validation before it was cool."
     }
   ],
   "skills": [
