@@ -269,7 +269,47 @@
     },
     {
       "language": "Spanish",
-      "fluency": "Proficient"
+      "fluency": "Advanced"
+    },
+    {
+      "language": "(Lisp Flavoured) Erlang",
+      "fluency": "Advanced"
+    },
+    {
+      "language": "Clojure | Lisp | Scheme",
+      "fluency": "Advanced"
+    },
+    {
+      "language": "Haskell | Idris",
+      "fluency": "Intermediate"
+    },
+    {
+      "language": "Objective-C | Swift",
+      "fluency": "Intermediate"
+    },
+    {
+      "language": "Java",
+      "fluency": "Intermediate"
+    },
+    {
+      "language": "PHP | Perl | Python",
+      "fluency": "Intermediate"
+    },
+    {
+      "language": "C | C++ | C# | Go",
+      "fluency": "beginner"
+    },
+    {
+      "language": "F# | OCaml",
+      "fluency": "beginner"
+    },
+    {
+      "language": "Ruby | Elixir",
+      "fluency": "beginner"
+    },
+    {
+      "language": "Agda | Coq",
+      "fluency": "Beginner"
     }
   ]
 }
