@@ -196,6 +196,25 @@
         "Piano Ensemble",
         "Concert Choir"
       ]
+    },
+    {
+      "institution": "University of Minnesota",
+      "area": "General Education",
+      "startDate": "2007-09-01",
+      "endDate": "2008-06-01",
+      "courses": [
+        "Physics I",
+        "Calculus I",
+        "Modern Literature"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "High Pass on the LPE",
+      "date": "2008-03-01",
+      "awarder": "University of Minnesota",
+      "summary": "Recebí la nota más alta en el examen de idioma español."
     }
   ],
   "volunteer": [
