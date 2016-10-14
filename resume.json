@@ -311,5 +311,38 @@
       "language": "Agda | Coq",
       "fluency": "Beginner"
     }
+  ],
+  "interests": [
+    {
+      "name": "Music",
+      "keywords": [
+        "theory",
+        "history",
+        "punk",
+        "surf",
+        "bebop",
+        "live",
+        "obscure",
+        "noise"
+      ]
+    },
+    {
+      "name": "PLT",
+      "keywords": [
+        "dependent types",
+        "λ-calculi",
+        "category theory",
+        "compilers"
+      ]
+    },
+    {
+      "name": "Verified Programming",
+      "keywords": [
+        "Idris",
+        "Agda",
+        "Coq",
+        "NuPRL"
+      ]
+    }
   ]
 }
