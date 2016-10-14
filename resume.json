@@ -190,15 +190,21 @@
       "startDate": "2008-09-07",
       "endDate": "2013-05-10",
       "courses": [
-        "Music History",
-        "Music Theory",
-        "Piano",
-        "Piano Ensemble",
-        "Concert Choir",
-        "Discrete Maths",
-        "Web Programming",
-        "Philosophy",
-        "Earth Science"
+        "Music {History,Theory} {I,II}",
+        "(Advanced) {Ear Training,Music Theory} {I,II}",
+        "Private Piano (Advanced)",
+        "Piano (Ensemble)",
+        "College Choir",
+        "General Psychology",
+        "Composition {I,II}",
+        "Earth Science",
+        "Statistics",
+        "Calculus (CLEP)",
+        "PHIL 1041: Introduction to Logic",
+        "CSCI 1081: Programming Fundamentals",
+        "CSCI 1082: Object-Oriented Programming",
+        "CSCI 2006: Internet Programming: Server-side Applications",
+        "CSCI 2014: Discrete Structures of Computer Science"
       ]
     },
     {
@@ -207,19 +213,20 @@
       "startDate": "2012-09-01",
       "endDate": "2013-06-01",
       "courses": [
-        "Networking",
-        "Architecture",
-        "Data Structures"
+        "ICS240: Programming with Elementary Data Structures",
+        "ICS362: Computer Organization and Architecture",
+        "ICS460: Computer Networks",
+        "Approaches to Cultural Anthropology",
+        "The Nature of Language"
       ]
     },
     {
       "institution": "University of Minnesota",
-      "area": "General Education",
+      "area": "Electrical Engineering",
       "startDate": "2007-09-01",
       "endDate": "2008-06-01",
       "courses": [
-        "Physics I",
-        "Calculus I",
+        "Physics",
         "Modern Literature",
         "Film"
       ]
