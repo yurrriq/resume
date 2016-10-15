@@ -4,7 +4,6 @@
     "label": "Highly functional yak stylist",
     "picture": "http:\/\/2.gravatar.com\/avatar\/6bbb64bfe821e6752be3cf7783805e7b?size=100px",
     "website": "http://ericb.me",
-    "summary": "TODO: write a summary",
     "location": {
       "city": "Minneapolis",
       "countryCode": "USA",
@@ -22,7 +21,7 @@
         "url": "https://twitter.com/yurrriq"
       },
       {
-        "network": "stack overflow",
+        "network": "Stack Overflow",
         "username": "yurrriq",
         "url": "https://stackoverflow.com/users/1793234/yurrriq"
       }]
@@ -57,7 +56,7 @@
       "website": "https://frontendmasters.com",
       "startDate": "2015-08-15",
       "endDate": "2016-11-01",
-      "summary": "Starting as an occasional iOS contractor on and off from 2013 to 2015, I joined the company half-time in August 2015 and ramped up to full-time by January 2016. Eventually, my responsibilities shifted from maintaining the iOS app to re-architecting the outdated backend, including codifying the data model, handling DevOps, maintaining parity (as appropriate) with the existing system and designing and building its modular, data-driven successor from scratch.",
+      "summary": "Starting as an occasional iOS contractor on and off from 2013 to 2015, I joined the company half-time in August 2015 and ramped up to full-time by January 2016. Eventually, my responsibilities shifted from maintaining the iOS app to re-architecting the outdated backend, including codifying the data model, handling DevOps, designing and bulding an elli-based web app in LFE, maintaining parity (as appropriate) with the existing system and designing and building its modular, data-driven successor from scratch.",
       "keywords": [
         "Objective-C",
         "Swift",
@@ -79,7 +78,7 @@
       "website": "https://www.transvoyant.com",
       "startDate": "2014-11-01",
       "endDate": "2015-07-01",
-      "summary": "Building on the existing Java-based REST API, I spearheaded development of a new web front end in ClojureScript, based on a design mockup. It featured a customizable, data-driven UI with dynamic rendering and mobile-friendly drag-and-drop mechanics.",
+      "summary": "Building on the existing Java-based REST API, I spearheaded development of a new web front end in ClojureScript based on a design mockup. It featured a customizable, data-driven UI with dynamic rendering and mobile-friendly drag-and-drop mechanics.",
       "keywords": [
         "ClojureScript",
         "React",
@@ -99,7 +98,7 @@
       "website": "https://invisiblefriend.com/wtf",
       "startDate": "2014-05-01",
       "endDate": "2015-08-01",
-      "summary": "As a Software Engineer and half of the core engineering team, I was passionate about writing efficient, modular, well-tested code in a very agile environment, doing whatever it took to get the job done, even if that meant working long hours and weekends.",
+      "summary": "As a Software Engineer and half of the core engineering team at this social media startup, I was passionate about writing efficient, modular, well-tested code in a very agile environment.",
       "keywords": [
         "Clojure(Script)",
         "Node.js",
