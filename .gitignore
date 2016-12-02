@@ -42,3 +42,9 @@ jspm_packages
 
 # Output of 'npm pack'
 *.tgz
+
+# Emacs LaTeX
+auto/
+
+# Unzipped template
+tccv-master/
