@@ -30,3 +30,12 @@ test: $(RESUME) resume.json
 	$(RESUME) test
 
 watch: serve
+
+bin/ym:
+	@mkdir -p bin
+	go build -o bin/ym github.com/iameli/ym
+
+resume.yml: resume.json bin/ym
+	@echo "---"  >$@
+	bin/ym <$<  >>$@
+	@echo "---" >>$@
