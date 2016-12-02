@@ -37,5 +37,10 @@ bin/ym:
 
 resume.yml: resume.json bin/ym
 	@echo "---"  >$@
-	bin/ym <$<  >>$@
+	bin/ym <$< >>$@
 	@echo "---" >>$@
+
+resume.yml.patch: resume.yml resume-tweaked.yml
+	@echo git diff --no-index $^ >$@
+	@git --no-pager diff --no-color --no-index $^ >$@ || exit 0
+	@test -f $@
