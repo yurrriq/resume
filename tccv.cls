@@ -112,18 +112,23 @@
 %         {address}
 %         {phone number}
 %         {email}
-\newcommand\personal[4][]{%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Modified by Eric Bailey on 2016-12-01 to remove address and phone. %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand\personal[2][]{%
     \newcommand\SYMBOL[1]{\raisebox{-2pt}{\Large\ding{##1}}}%
     \needspace{0.5\textheight}%
     \newdimen\boxwidth%
     \boxwidth=\dimexpr\linewidth-2\fboxsep\relax%
     \colorbox[HTML]{F5DD9D}{%
     \begin{tabularx}{\boxwidth}{c|X}
-    \SYMBOL{45} & {#2}\smallskip\\
-    \SYMBOL{37} & {#3}\smallskip\\
-    \SYMBOL{41} & \href{mailto:#4}{#4}
+    \SYMBOL{41} & \href{mailto:#2}{#2}
     \ifstrempty{#1}{}{\smallskip\\ \SYMBOL{218} & \href{http://#1}{#1}}
     \end{tabularx}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                       End of modifications.                        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Every \item can be followed by one or more paragraphs
 % of description:
