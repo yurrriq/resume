@@ -1,5 +1,5 @@
 diff --git a/resume.yml b/resume-tweaked.yml
-index 6383264..fb8b2bc 100644
+index 6383264..44cab10 100644
 --- a/resume.yml
 +++ b/resume-tweaked.yml
 @@ -41,28 +41,9 @@ education:
@@ -32,12 +32,11 @@ index 6383264..fb8b2bc 100644
  interests:
  - keywords:
    - theory
-@@ -91,37 +72,45 @@ languages:
+@@ -91,37 +72,48 @@ languages:
    language: English
  - fluency: Advanced
    language: Spanish
-+programming:
- - fluency: Advanced
+-- fluency: Advanced
 -  language: (Lisp Flavoured) Erlang
 -- fluency: Advanced
 -  language: Clojure | Lisp | Scheme
@@ -47,12 +46,7 @@ index 6383264..fb8b2bc 100644
 -  language: Objective-C | Swift
 -- fluency: Intermediate
 -  language: Java
-+  languages:
-+  - (Lisp Flavoured) Erlang
-+  - Clojure
-+  - Lisp
-+  - Scheme
- - fluency: Intermediate
+-- fluency: Intermediate
 -  language: PHP | Perl | Python
 -- fluency: beginner
 -  language: C | C++ | C# | Go
@@ -60,20 +54,32 @@ index 6383264..fb8b2bc 100644
 -  language: F# | OCaml
 -- fluency: beginner
 -  language: Ruby | Elixir
+-- fluency: Beginner
+-  language: Agda | Coq
++programming:
++- fluency: \> 10,000 LoC
 +  languages:
-+  - Haskell
-+  - Idris
++  - (Lisp Flavoured) Erlang
++  - Clojure
++  - Lisp
++  - Scheme
++- fluency: \> 5,000 LoC
++  languages:
 +  - Objective-C
 +  - Swift
 +  - Java
++- fluency: \> 3,000 LoC
++  languages:
++  - Idris
++  - Haskell
 +  - PHP
 +  - Perl
 +  - Python
- - fluency: Beginner
--  language: Agda | Coq
++- fluency: < 1,000 LoC
 +  languages:
 +  - C
-+  - C$^\sharp$
++  # - C$^\sharp$
++  - C\hspace{-.05em}\raisebox{.5ex}{\tiny $++$}
 +  - Go
 +  - F$^\sharp$
 +  - OCaml
@@ -97,7 +103,7 @@ index 6383264..fb8b2bc 100644
    summary: 'Casual interview re: my interest in programming and technology.'
    website: http://tech.mn/news/2013/08/21/know-this-nerd-meet-eric-bailey/
  skills:
-@@ -182,12 +171,12 @@ work:
+@@ -182,12 +174,12 @@ work:
    - Clojure
    - Nix
    position: Contributor
@@ -112,7 +118,7 @@ index 6383264..fb8b2bc 100644
    keywords:
    - Objective-C
    - Swift
-@@ -202,7 +191,7 @@ work:
+@@ -202,7 +194,7 @@ work:
    - data-driven
    - documentation
    position: Software Engineer
@@ -121,7 +127,7 @@ index 6383264..fb8b2bc 100644
    summary: Starting as an occasional iOS contractor on and off from 2013 to 2015,
      I joined the company half-time in August 2015 and ramped up to full-time by January
      2016. Eventually, my responsibilities shifted from maintaining the iOS app to
-@@ -212,7 +201,7 @@ work:
+@@ -212,7 +204,7 @@ work:
      data-driven successor from scratch.
    website: https://frontendmasters.com
  - company: Transvoyant
@@ -130,7 +136,7 @@ index 6383264..fb8b2bc 100644
    keywords:
    - ClojureScript
    - React
-@@ -225,14 +214,14 @@ work:
+@@ -225,14 +217,14 @@ work:
    - REST
    - devops
    position: Web Developer
@@ -147,7 +153,7 @@ index 6383264..fb8b2bc 100644
    keywords:
    - Clojure(Script)
    - Node.js
-@@ -246,90 +235,10 @@ work:
+@@ -246,90 +238,30 @@ work:
    - startup
    - small team
    position: Software Engineer
@@ -237,5 +243,25 @@ index 6383264..fb8b2bc 100644
 -  summary: Helped implement and maintain client-requested features in a real-time
 -    audience interaction web app.
 -  website: https://www.voicehive.com
++- company: Electric Wizardry, LLC
++  position: Owner/Contractor
++  website: https://www.linkedin.com/in/ericbee#projects
++  startDate: 2012-08
++  endDate: Present
++  summary: Periodically, I do contract work as my LLC. Such work has included
++    \href{http://www.rfmoeller.com}{SQL security hole patching}, updating
++    \href{https://www.honeywell.com}{a bespoke kiosk web app} to work on IE8,
++    porting \href{https://play.google.com/store/apps/details?id=com.caspersen.narrative}{an interactive Q\&A app}
++    from iOS to Android, writing a custom podcast app for
++    \href{https://itunes.apple.com/us/app/tom-barnard-podcast-app/id1131763252?mt=8}{iOS}
++    and \href{https://play.google.com/store/apps/details?id=com.tombarnard.show}{Android},
++    developing \href{https://web.archive.org/web/20130711014544/http://definest.co}{a vocabulary-building app}
++    for iOS, and helping implement and maintain \href{https://www.voicehive.com}{a real-time audience interaction web app}.
++
++    \footnotesize{N.B. Much of my work has been augmented or phased out at this
++    point.
++
++    For details refer to the \href{http://yurrriq.github.io/resume}{web version}
++    of this document.}
  
  ---

@@ -10,7 +10,7 @@
 \begin{eventlist}
   $for(work)$
 \item{$work.startDate$ -- $if(work.endDate)$$work.endDate$$else$Present$endif$}
-  {\href{$work.website$}{$work.company$}}
+  {$work.company$ \href{$work.website$}{\Large\ding{218}}}
   {$work.position$}
 
   $work.summary$
@@ -68,5 +68,7 @@
   $endfor$
 
 \end{factlist}
+
+\footnotesize{N.B. LoC here means \textit{lines [of code] spent}, \href{http://www.cs.utexas.edu/users/EWD/transcriptions/EWD10xx/EWD1036.html}{as per Dijkstra}.}
 
 \end{document}

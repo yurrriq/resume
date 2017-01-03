@@ -45,5 +45,5 @@ resume.yml.patch: resume.yml resume-tweaked.yml
 	@git --no-pager diff --no-color --no-index $^ >$@ || exit 0
 	@test -f $@
 
-resume.pdf: resume.tex resume-tweaked.yml resume.yml.patch
+resume.pdf: resume.tex resume-tweaked.yml resume.yml.patch tccv.cls
 	pandoc --template $(filter-out $(lastword $^),$^) -o $@

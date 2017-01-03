@@ -73,26 +73,29 @@ languages:
 - fluency: Advanced
   language: Spanish
 programming:
-- fluency: Advanced
+- fluency: \> 10,000 LoC
   languages:
   - (Lisp Flavoured) Erlang
   - Clojure
   - Lisp
   - Scheme
-- fluency: Intermediate
+- fluency: \> 5,000 LoC
   languages:
-  - Haskell
-  - Idris
   - Objective-C
   - Swift
   - Java
+- fluency: \> 3,000 LoC
+  languages:
+  - Idris
+  - Haskell
   - PHP
   - Perl
   - Python
-- fluency: Beginner
+- fluency: < 1,000 LoC
   languages:
   - C
-  - C$^\sharp$
+  # - C$^\sharp$
+  - C\hspace{-.05em}\raisebox{.5ex}{\tiny $++$}
   - Go
   - F$^\sharp$
   - OCaml
@@ -240,5 +243,25 @@ work:
     media startup, I was passionate about writing efficient, modular, well-tested
     code in a very agile environment.
   website: https://invisiblefriend.com/wtf
+- company: Electric Wizardry, LLC
+  position: Owner/Contractor
+  website: https://www.linkedin.com/in/ericbee#projects
+  startDate: 2012-08
+  endDate: Present
+  summary: Periodically, I do contract work as my LLC. Such work has included
+    \href{http://www.rfmoeller.com}{SQL security hole patching}, updating
+    \href{https://www.honeywell.com}{a bespoke kiosk web app} to work on IE8,
+    porting \href{https://play.google.com/store/apps/details?id=com.caspersen.narrative}{an interactive Q\&A app}
+    from iOS to Android, writing a custom podcast app for
+    \href{https://itunes.apple.com/us/app/tom-barnard-podcast-app/id1131763252?mt=8}{iOS}
+    and \href{https://play.google.com/store/apps/details?id=com.tombarnard.show}{Android},
+    developing \href{https://web.archive.org/web/20130711014544/http://definest.co}{a vocabulary-building app}
+    for iOS, and helping implement and maintain \href{https://www.voicehive.com}{a real-time audience interaction web app}.
+
+    \footnotesize{N.B. Much of my work has been augmented or phased out at this
+    point.
+
+    For details refer to the \href{http://yurrriq.github.io/resume}{web version}
+    of this document.}
 
 ---
