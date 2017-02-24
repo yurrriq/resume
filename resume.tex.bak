@@ -1,0 +1,76 @@
+\documentclass[fontsize=10pt]{tccv}
+\usepackage[english]{babel}
+
+\begin{document}
+
+\part{$basics.name$}
+
+\section{Select work experience}
+
+\begin{eventlist}
+  $for(work)$
+\item{$work.startDate$ -- $if(work.endDate)$$work.endDate$$else$Present$endif$}
+  {$work.company$}
+  {$work.position$}
+
+  \url{$work.website$}
+
+  $work.summary$
+
+  $endfor$
+
+\end{eventlist}
+
+\personal
+[blorg.ericb.me] % [$basics.website$]
+% {Address}
+% {Phone}
+{eric@ericb.me}
+
+\section{Education}
+
+\begin{yearlist}
+
+  $for(education)$
+\item[$education.area$]{$if(education.startDate)$$education.startDate$ -- $endif$$education.endDate$}
+  {$education.studyType$}
+  {$education.institution$}
+
+  $endfor$
+
+\end{yearlist}
+
+\section{Interviews}
+
+\begin{yearlist}
+
+  $for(publications)$
+\item{$publications.year$}
+  {$publications.publisher$ (\href{$publications.website$}{$publications.name$})}
+  {$publications.summary$}
+  $endfor$
+
+\end{yearlist}
+
+\section{Communication skills}
+
+\begin{factlist}
+  $for(languages)$
+\item{$languages.language$}{$languages.fluency$}
+  $endfor$
+\end{factlist}
+
+\section{Software skills}
+
+\begin{factlist}
+
+  $for(programming)$
+\item{$programming.fluency$}
+  {$for(programming.languages)$$programming.languages$$sep$, $endfor$}
+  $endfor$
+
+\end{factlist}
+
+\footnotesize{N.B. LoC here means \textit{lines [of code] spent}, \href{http://www.cs.utexas.edu/users/EWD/transcriptions/EWD10xx/EWD1036.html}{as per Dijkstra}.}
+
+\end{document}

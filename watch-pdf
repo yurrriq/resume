@@ -1,0 +1,7 @@
+#! /usr/bin/env bash
+
+open -a Skim resume.pdf
+
+watchman-make \
+    -p resume-tweaked.yml -t resume.yml.patch \
+    -p resume.tex resume-tweaked.yml -t resume.pdf

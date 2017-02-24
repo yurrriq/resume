@@ -25,25 +25,55 @@ basics:
   website: http://ericb.me
 education:
 - area: in Music
+  # summary: Focusing on piano performance, I took computer science and maths courses.
   courses:
-  - Music {History,Theory} {I,II}
-  - (Advanced) {Ear Training,Music Theory} {I,II}
-  - Private Piano (Advanced)
-  - Piano (Ensemble)
-  - College Choir
-  - General Psychology
-  - Composition {I,II}
-  - Earth Science
+  # - Music {History,Theory} {I,II}
+  # - (Advanced) {Ear Training,Music Theory} {I,II}
+  # - Private Piano (Advanced)
+  # - Piano (Ensemble)
+  # - College Choir
+  # - General Psychology
+  # - Composition {I,II}
+  # - Earth Science
   - Statistics
-  - Calculus (CLEP)
-  - 'PHIL 1041: Introduction to Logic'
-  - 'CSCI 1081: Programming Fundamentals'
-  - 'CSCI 1082: Object-Oriented Programming'
-  - 'CSCI 2006: Internet Programming: Server-side Applications'
-  - 'CSCI 2014: Discrete Structures of Computer Science'
+  - Calculus (\hrefootnote{https://clep.collegeboard.org/science-and-mathematics/calculus}{CLEP})
+  # - 'PHIL 1041: Introduction to Logic'
+  - Intro to Logic
+  # - 'CSCI 1081: Programming Fundamentals'
+  - Programming Fundamentals
+  # - 'CSCI 1082: Object-Oriented Programming'
+  - Object-Oriented Programming
+  # - 'CSCI 2006: Internet Programming: Server-side Applications'
+  - Internet Programming: Server-side Applications
+  # - 'CSCI 2014: Discrete Structures of Computer Science'
+  - Discrete Structures of Computer Science
   endDate: 2013
   institution: Century College
+  startDate: 2008
   studyType: Associate of Fine Arts
+- area: Computer Science
+  courses:
+  # - 'ICS240: Programming with Elementary Data Structures'
+  - Programming with Elementary Data Structures
+  # - 'ICS362: Computer Organization and Architecture'
+  - Computer Organization and Architecture
+  # - 'ICS460: Computer Networks'
+  - Computer Networks
+  # - Approaches to Cultural Anthropology
+  - The Nature of Language
+  endDate: 2013
+  institution: Metro State University
+  startDate: 2012
+  studyType: Undergrad
+- courses:
+  - Physics
+  - Modern Literature
+  - Film
+  - Political Science
+  endDate: 2008
+  institution: University of Minnesota
+  startDate: 2007
+  studyType: General Studies
 interests:
 - keywords:
   - theory
@@ -68,41 +98,45 @@ interests:
   - NuPRL
   name: Verified Programming
 languages:
-- fluency: Native speaker
-  language: English
-- fluency: Advanced
-  language: Spanish
+# - fluency: Native speaker
+#   language: English
+- fluency: Casi bilingüe
+  language: Español
+- fluency: Grammatica e vocabolario di base
+  language: Italiano
+- fluency: Grundläggande grammatik och ordförråd
+  language: Svenska
 programming:
 - fluency: \> 10,000 LoC
   languages:
-  - (Lisp Flavoured) Erlang
   - Clojure
-  - Lisp
+  - (Lisp Flavoured) Erlang
+  - \{Common,Emacs\} Lisp
   - Scheme
 - fluency: \> 5,000 LoC
   languages:
+  - Java
   - Objective-C
   - Swift
-  - Java
 - fluency: \> 3,000 LoC
   languages:
-  - Idris
   - Haskell
-  - PHP
+  - \hrefootnote{http://idris-lang.org}{Idris}
   - Perl
+  - PHP
   - Python
 - fluency: < 1,000 LoC
   languages:
+  - \hrefootnote{http://wiki.portal.chalmers.se/agda}{Agda}
   - C
   # - C$^\sharp$
   - C\hspace{-.05em}\raisebox{.5ex}{\tiny $++$}
-  - Go
+  - Coq
+  - Elixir
   - F$^\sharp$
+  - Go
   - OCaml
   - SML
-  - Elixir
-  - Agda
-  - Coq
 publications:
 - name: Episode 59 - Eric Bailey
   publisher: Functional Geekery
@@ -169,99 +203,127 @@ work:
   - 'NixOS: lfe, erlang, elixir'
   - '...'
   keywords:
-  - LFE
-  - Erlang
   - Clojure
+  - Erlang
+  - LFE
+  - \{Common,Emacs\} Lisp
   - Nix
+  - Racket
+  - Scheme
   position: Contributor
   startDate: 2015
-  summary: I make frequent contributions to open source, mostly in (Lisp Flavoured)
-    Erlang.
-  website: https://www.openhub.net/accounts/yurrriq
+  summary: |
+    I make frequent contributions to open source, mostly in
+    (\hrefootnote{https://github.com/rvirding/lfe}{Lisp Flavoured}) Erlang.
+    Refer to my \hrefootnote{https://www.openhub.net/accounts/yurrriq}{OpenHUB}
+    and \hrefootnote{https://github.com/yurrriq}{GitHub} profiles for more
+    information. Recently, I\'ve been helping organize
+    \hrefootnote{https://github.com/elli-lib}{an effort to modernize and
+    maintain elli and its middlewares}.
+  # website: https://www.openhub.net/accounts/yurrriq
+  # websites:
+  #   - https://www.openhub.net/accounts/yurrriq
+  #   - https://github.com/yurrriq
 - company: Frontend Masters
-  endDate: Nov 2016
+  # endDate: Nov 2016
+  endDate: 2016
   keywords:
+  - Erlang
+  - LFE
   - Objective-C
   - Swift
-  - Core Data
-  - video streaming
-  - DevOps
   - CI
+  - Core Data
+  - DevOps
   - Docker
-  - LFE
-  - Erlang
+  - Documentation
+  - Realm
   - REST
-  - data-driven
-  - documentation
+  - RxSwift
+  - Video streaming
   position: Software Engineer
-  startDate: Aug 2015
-  summary: Starting as an occasional iOS contractor on and off from 2013 to 2015,
-    I joined the company half-time in August 2015 and ramped up to full-time by January
-    2016. Eventually, my responsibilities shifted from maintaining the iOS app to
-    re-architecting the outdated backend, including codifying the data model, handling
-    DevOps, designing and bulding an elli-based web app in LFE, maintaining parity
-    (as appropriate) with the existing system and designing and building its modular,
-    data-driven successor from scratch.
-  website: https://frontendmasters.com
-- company: Transvoyant
-  endDate: Jul 2015
-  keywords:
-  - ClojureScript
-  - React
-  - data-driven
-  - modular
-  - customizable
-  - mobile
-  - CSS
-  - JSON
-  - REST
-  - devops
-  position: Web Developer
-  startDate: Nov 2014
-  summary: Building on the existing Java-based REST API, I spearheaded development
-    of a new web front end in ClojureScript based on a design mockup. It featured
-    a customizable, data-driven UI with dynamic rendering and mobile-friendly drag-and-drop
-    mechanics.
-  website: https://www.transvoyant.com
+  # startDate: Aug 2015
+  startDate: 2015
+  summary: |
+    Starting as an occasional iOS contractor from 2013 through 2015, I joined
+    \hrefootnote{https://frontendmasters.com}{the company} full-time by January
+    2016. Eventually, my responsibilities shifted from maintaining the iOS app
+    to re-architecting the outdated backend, including codifying the data model,
+    handling DevOps, designing and building an elli-based web app in LFE,
+    maintaining parity (as appropriate) with the existing system and designing
+    and building its modular, data-driven successor.
+  # website: https://frontendmasters.com
 - company: invisible friend
-  endDate: Aug 2015
+  # endDate: Aug 2015
+  endDate: 2015
   keywords:
   - Clojure(Script)
   - Node.js
   - Chrome
   - Docker
-  - DevOps
-  - LevelDB
-  - PostgreSQL
   - Datomic
+  - \{Level,Rethink\}DB
+  - PostgreSQL
   - Redis
-  - startup
-  - small team
+  - DevOps
   position: Software Engineer
-  startDate: May 2014
-  summary: As a Software Engineer and half of the core engineering team at this social
-    media startup, I was passionate about writing efficient, modular, well-tested
-    code in a very agile environment.
-  website: https://invisiblefriend.com/wtf
-- company: Electric Wizardry, LLC
-  position: Owner/Contractor
-  website: https://www.linkedin.com/in/ericbee#projects
-  startDate: 2012-08
+  # startDate: May 2014
+  startDate: 2014
+  summary: |
+    As a Software Engineer and half of the core engineering team at this
+    \hrefootnote{https://plink.love}{social media startup}, I was passionate
+    about writing efficient, modular, well-tested code in a very agile
+    environment.
+  # website: https://invisiblefriend.com/wtf
+- company: Transvoyant
+  # endDate: Jul 2015
+  endDate: 2015
+  keywords:
+  - ClojureScript
+  - CSS
+  - JSON
+  - React
+  - DevOps
+  - Modular
+  - Mobile
+  - REST
+  position: Web Developer
+  # startDate: Nov 2014
+  startDate: 2014
+  summary: |
+    Building on the existing Java-based REST API, I spearheaded development of a
+    new web front end in ClojureScript. It featured a user-customizable,
+    data-driven UI with dynamic rendering and mobile-friendly drag-and-drop.
+  # website: https://www.transvoyant.com
+- company: Electric Wizardry
+  position: Owner
+  # website: https://www.linkedin.com/in/ericbee#projects
+  # website: http://yurrriq.github.io/resume
+  # websites:
+  #   - https://itunes.apple.com/us/app/tom-barnard-podcast-app/id1131763252?mt=8
+  #   - https://play.google.com/store/apps/details?id=com.tombarnard.show
+  #   - https://web.archive.org/web/20130711014544/http://definest.co
+  #   - https://www.voicehive.com
+  # startDate: Aug 2012
+  startDate: 2012
   endDate: Present
-  summary: Periodically, I do contract work as my LLC. Such work has included
-    \href{http://www.rfmoeller.com}{SQL security hole patching}, updating
-    \href{https://www.honeywell.com}{a bespoke kiosk web app} to work on IE8,
-    porting \href{https://play.google.com/store/apps/details?id=com.caspersen.narrative}{an interactive Q\&A app}
-    from iOS to Android, writing a custom podcast app for
-    \href{https://itunes.apple.com/us/app/tom-barnard-podcast-app/id1131763252?mt=8}{iOS}
-    and \href{https://play.google.com/store/apps/details?id=com.tombarnard.show}{Android},
-    developing \href{https://web.archive.org/web/20130711014544/http://definest.co}{a vocabulary-building app}
-    for iOS, and helping implement and maintain \href{https://www.voicehive.com}{a real-time audience interaction web app}.
-
-    \footnotesize{N.B. Much of my work has been augmented or phased out at this
-    point.
-
-    For details refer to the \href{http://yurrriq.github.io/resume}{web version}
-    of this document.}
+  summary: |
+    Periodically, I do contract work as my LLC. Such work has included
+    \hrefootnote{http://www.rfmoeller.com}{SQL security hole patching}, updating
+    \hrefootnote{https://www.honeywell.com}{a bespoke kiosk web app} to work on
+    IE8, porting
+    \hrefootnote{https://play.google.com/store/apps/details?id=com.caspersen.narrative}{an
+    interactive Q\&A app} from iOS to Android, writing a custom podcast app for
+    \hrefootnote{https://itunes.apple.com/us/app/tom-barnard-podcast-app/id1131763252}{iOS}
+    and
+    \hrefootnote{https://play.google.com/store/apps/details?id=com.tombarnard.show}{Android},
+    developing
+    \hrefootnote{https://web.archive.org/web/20130711014544/http://definest.co}{a
+    vocabulary-building app} for iOS, and helping implement and maintain
+    \hrefootnote{https://www.voicehive.com}{a real-time audience interaction web
+    app}. \newline \textit{N.B. Much of my work has been augmented or phased out
+    here. \newline For details refer to
+    \hrefootnote{http://yurrriq.github.io/resume}{the web version of this
+    document}.}
 
 ---

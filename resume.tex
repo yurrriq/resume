@@ -1,74 +1,203 @@
-\documentclass[fontsize=10pt]{tccv}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Classicthesis-Styled CV
+% LaTeX Template
+% Version 1.0 (22/2/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% --------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+% --------------------------------------------------------------------
+
+\documentclass{scrartcl}
+
+\reversemarginpar
+
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}}
+
+\usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage[nochapters]{classicthesis}
+\usepackage[LabelsAligned]{currvita}
+
+\renewcommand{\cvheadingfont}{\LARGE\color{Maroon}}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon}
+
+\newlength{\datebox}\settowidth{\datebox}{Spring 2017}
+
+\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{\datebox}{\small
+    \textit{#1}}\hspace{1.5em} #2 #3 \vspace{0.5em}}
+
+\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}}
+
+\newcommand{\hrefootnote}[2]{\href{#1}{#2}\footnote{\url{#1}}}
+
+\setlength\parindent{0pt}
+
+% --------------------------------------------------------------------
 
 \begin{document}
 
-\part{$basics.name$}
+\date{\tiny This \LaTeX\ document was typeset on \today.}
 
-\section{Select work experience}
+\pagestyle{empty}
 
-\begin{eventlist}
-  $for(work)$
-\item{$work.startDate$ -- $if(work.endDate)$$work.endDate$$else$Present$endif$}
-  {$work.company$ \href{$work.website$}{\Large\ding{218}}}
-  {$work.position$}
+% --------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+% --------------------------------------------------------------------
 
-  $work.summary$
+\begin{cv}
+  % Name
+  {\spacedallcaps{$basics.name$}}
+  \vspace{1.5em}
 
-  $endfor$
+  % Personal information heading
+  \noindent\spacedlowsmallcaps{Personal Information}
+  \vspace{0.5em}
 
-\end{eventlist}
+  % Email address
+  \NewEntry{email}{\href{mailto:eric@ericb.me}{eric@ericb.me}}
 
-\personal
-[blorg.ericb.me] % [$basics.website$]
-% {Address}
-% {Phone}
-{eric@ericb.me}
+  % Website
+  \NewEntry{blog}{\url{http://blorg.ericb.me}}
 
-\section{Education}
+  % Phone number
+  \NewEntry{phone}{(612) 327-1274}
 
-\begin{yearlist}
+  \vspace{1.5em}
 
-  $for(education)$
-\item[$education.area$]{$if(education.startDate)$$education.startDate$ -- $endif$$education.endDate$}
-  {$education.studyType$}
-  {$education.institution$}
+  \noindent\spacedlowsmallcaps{Objective}
+  \vspace{1em}
 
-  $endfor$
+  \Description{
+    Work with a disciplined team to accomplish well-defined goals in an open
+    and collaborative environment, using the right technologies for tasks at hand.}
+  \vspace{1.5em}
 
-\end{yearlist}
+  % ------------------------------------------------------------------
+  %	COMPUTER SKILLS
+  % ------------------------------------------------------------------
 
-\section{Interviews}
-
-\begin{yearlist}
-
-  $for(publications)$
-\item{$publications.year$}
-  {$publications.publisher$ (\href{$publications.website$}{$publications.name$})}
-  {$publications.summary$}
-  $endfor$
-
-\end{yearlist}
-
-\section{Communication skills}
-
-\begin{factlist}
-  $for(languages)$
-\item{$languages.language$}{$languages.fluency$}
-  $endfor$
-\end{factlist}
-
-\section{Software skills}
-
-\begin{factlist}
+  \spacedlowsmallcaps{Programming Languages}
+  \vspace{1em}
 
   $for(programming)$
-\item{$programming.fluency$}
-  {$for(programming.languages)$$programming.languages$$sep$, $endfor$}
+  \Description{\MarginText{$programming.fluency$}
+    $for(programming.languages)$$programming.languages$$sep$, $endfor$}
+  \vspace{-0.5em}
   $endfor$
 
-\end{factlist}
+  % ----------------------------------------------
 
-\footnotesize{N.B. LoC here means \textit{lines [of code] spent}, \href{http://www.cs.utexas.edu/users/EWD/transcriptions/EWD10xx/EWD1036.html}{as per Dijkstra}.}
+  \vspace{1.5em}
+
+  % ------------------------------------------------------------------
+  %	WORK EXPERIENCE
+  % ------------------------------------------------------------------
+
+  \noindent\spacedlowsmallcaps{Select Work Experience}
+  \vspace{1em}
+
+  $for(work)$
+
+  \NewEntry{$work.startDate$--$if(work.endDate)$$work.endDate$$else$Present$endif$}
+  {$work.position$, \textsc{$work.company$}}
+
+  \Description{\MarginText{$work.company$}$work.summary$\newline
+    $if(work.websites)$
+    \begin{itemize}
+      $for(work.websites)$
+    \item \url{$work.websites$}
+      $endfor$
+    \end{itemize}
+    $else$
+    $if(work.website)$
+    \vspace{0.5em}
+    \url{$work.website$}\newline
+    $endif$
+    $endif$
+    % \vspace{0.5em}
+    $if(work.keywords)$
+    \vspace{0.5em}
+    \textit{Tech}:
+    $for(work.keywords)$$work.keywords$$sep$\ \textbar\ $endfor$
+    $endif$}
+  $endfor$
+
+  % ----------------------------------------------
+
+  % \vspace{-1em}
+
+  % ------------------------------------------------------------------
+  %	EDUCATION
+  % ------------------------------------------------------------------
+
+  \spacedlowsmallcaps{Education}
+  \vspace{1em}
+
+  $for(education)$
+
+  \NewEntry{$if(education.startDate)$$education.startDate$--$endif$$education.endDate$}{$education.institution$}
+
+  \Description{\MarginText{$education.studyType$$if(education.area)$ $education.area$$endif$}
+    % $education.summary$
+    \textit{Select Courses}: $for(education.courses)$$education.courses$$sep$, $endfor$}
+
+  $endfor$
+
+  % ----------------------------------------------
+
+  \vspace{1em}
+
+  % ------------------------------------------------------------------
+  %	OTHER INFORMATION
+  % ------------------------------------------------------------------
+
+  \spacedlowsmallcaps{Miscellanea}\vspace{1em}
+
+  \Description{\MarginText{Interviews}
+    \textsc{Functional Geekery}:
+    \hrefootnote{https://www.functionalgeekery.com/episode-59-eric-bailey/}{Episode 59}\newline
+    ``In this episode... [I] talk [about my] entry into functional programming;
+    work with Scheme, Clojure, Haskell, and LFE; getting into the LFE community;
+    interop story with other BEAM languages; Exercism.io; and much more.''}
+
+  \Description{\textsc{Know This Nerd?}
+    \hrefootnote{http://tech.mn/news/2013/08/21/know-this-nerd-meet-eric-bailey/}{Meet
+      Eric Bailey}\newline
+    Casual interview re: my interest in programming and technology.}
+
+  % ------------------------------------------------
+
+  % Create a new length for the length of languages to keep them equally spaced
+  \newlength{\langbox}
+  % Length equals the length of "English"
+  \settowidth{\langbox}{English}
+
+  \Description{\MarginText{Spoken Languages}\parbox{\langbox}{\textsc{English}}
+    \hskip 1em
+    Native speaker}
+  $for(languages)$
+  \vspace{-1em}
+  \Description{\parbox{\langbox}{\textsc{$languages.language$}}
+    \hskip 1em
+    $languages.fluency$}
+  $endfor$
+
+  % ------------------------------------------------
+
+\end{cv}
 
 \end{document}
