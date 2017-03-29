@@ -1,5 +1,5 @@
 diff --git a/resume.yml b/resume-tweaked.yml
-index 6383264..c405e52 100644
+index 6383264..e1176f7 100644
 --- a/resume.yml
 +++ b/resume-tweaked.yml
 @@ -25,44 +25,55 @@ basics:
@@ -40,7 +40,7 @@ index 6383264..c405e52 100644
 +  # - 'CSCI 1082: Object-Oriented Programming'
 +  - Object-Oriented Programming
 +  # - 'CSCI 2006: Internet Programming: Server-side Applications'
-+  - Internet Programming: Server-side Applications
++  - 'Internet Programming: Server-side Applications'
 +  # - 'CSCI 2014: Discrete Structures of Computer Science'
 +  - Discrete Structures of Computer Science
 +  endDate: 2013
