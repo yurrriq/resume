@@ -35,6 +35,10 @@
 \usepackage{hyperref}
 \hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon}
 
+% https://tex.stackexchange.com/a/56146
+\usepackage{endnotes}
+\let\footnote\endnote
+
 \newlength{\datebox}\settowidth{\datebox}{Spring 2017}
 
 \newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{\datebox}{\small
@@ -198,6 +202,7 @@
 
   % ------------------------------------------------
 
+  \theendnotes
 \end{cv}
 
 \end{document}
