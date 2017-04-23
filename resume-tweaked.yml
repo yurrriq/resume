@@ -189,6 +189,33 @@ volunteer:
   summary: My code passed W3C validation before it was cool.
   website: https://web.archive.org/web/20041213172447/http://undeadart.org/
 work:
+- company: Electric Wizardry
+  position: Owner
+  # website: https://www.linkedin.com/in/ericbee#projects
+  # website: http://yurrriq.github.io/resume
+  # websites:
+  #   - https://itunes.apple.com/us/app/tom-barnard-podcast-app/id1131763252?mt=8
+  #   - https://play.google.com/store/apps/details?id=com.tombarnard.show
+  #   - https://web.archive.org/web/20130711014544/http://definest.co
+  #   - https://www.voicehive.com
+  # startDate: Aug 2012
+  startDate: 2012
+  endDate: Present
+  summary: |
+    Periodically, I do contract work as my LLC. Such work has included
+    \hrefootnote{http://www.rfmoeller.com}{SQL security hole patching}, updating
+    \hrefootnote{https://www.honeywell.com}{a bespoke kiosk web app} to work on
+    IE8, porting
+    \hrefootnote{https://play.google.com/store/apps/details?id=com.caspersen.narrative}{an
+    interactive Q\&A app} from iOS to Android, writing a custom podcast app for
+    \hrefootnote{https://itunes.apple.com/us/app/tom-barnard-podcast-app/id1131763252}{iOS}
+    and
+    \hrefootnote{https://play.google.com/store/apps/details?id=com.tombarnard.show}{Android},
+    developing
+    \hrefootnote{https://web.archive.org/web/20130711014544/http://definest.co}{a
+    vocabulary-building app} for iOS, and helping implement and maintain
+    \hrefootnote{https://www.voicehive.com}{a real-time audience interaction web
+    app}.\vspace{-2em}
 - company: Open Source
   highlights:
   - 'exercism.io: xclojure, xelisp, xlfe, xracket, xscheme'
@@ -295,35 +322,4 @@ work:
     new web front end in ClojureScript. It featured a user-customizable,
     data-driven UI with dynamic rendering and mobile-friendly drag-and-drop.
   # website: https://www.transvoyant.com
-- company: Electric Wizardry
-  position: Owner
-  # website: https://www.linkedin.com/in/ericbee#projects
-  # website: http://yurrriq.github.io/resume
-  # websites:
-  #   - https://itunes.apple.com/us/app/tom-barnard-podcast-app/id1131763252?mt=8
-  #   - https://play.google.com/store/apps/details?id=com.tombarnard.show
-  #   - https://web.archive.org/web/20130711014544/http://definest.co
-  #   - https://www.voicehive.com
-  # startDate: Aug 2012
-  startDate: 2012
-  endDate: Present
-  summary: |
-    Periodically, I do contract work as my LLC. Such work has included
-    \hrefootnote{http://www.rfmoeller.com}{SQL security hole patching}, updating
-    \hrefootnote{https://www.honeywell.com}{a bespoke kiosk web app} to work on
-    IE8, porting
-    \hrefootnote{https://play.google.com/store/apps/details?id=com.caspersen.narrative}{an
-    interactive Q\&A app} from iOS to Android, writing a custom podcast app for
-    \hrefootnote{https://itunes.apple.com/us/app/tom-barnard-podcast-app/id1131763252}{iOS}
-    and
-    \hrefootnote{https://play.google.com/store/apps/details?id=com.tombarnard.show}{Android},
-    developing
-    \hrefootnote{https://web.archive.org/web/20130711014544/http://definest.co}{a
-    vocabulary-building app} for iOS, and helping implement and maintain
-    \hrefootnote{https://www.voicehive.com}{a real-time audience interaction web
-    app}. \newline \textit{N.B. Much of my work has been augmented or phased out
-    here. \newline For details refer to
-    \hrefootnote{http://yurrriq.github.io/resume}{the web version of this
-    document}.}
-
 ---
