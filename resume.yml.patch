@@ -1,5 +1,5 @@
 diff --git a/resume.yml b/resume-tweaked.yml
-index 6383264..90e01c2 100644
+index 6383264..f9f9a72 100644
 --- a/resume.yml
 +++ b/resume-tweaked.yml
 @@ -25,44 +25,55 @@ basics:
@@ -84,7 +84,7 @@ index 6383264..90e01c2 100644
  interests:
  - keywords:
    - theory
-@@ -87,41 +98,56 @@ interests:
+@@ -87,41 +98,70 @@ interests:
    - NuPRL
    name: Verified Programming
  languages:
@@ -123,34 +123,48 @@ index 6383264..90e01c2 100644
 +programming:
 +- fluency: \> 10,000 LoC
 +  languages:
++  - (Bourne) Shell
 +  - Clojure
 +  - (Lisp Flavoured) Erlang
-+  - \{Common,Emacs\} Lisp
-+  - Scheme
++  - Lisp/Scheme (various)
 +- fluency: \> 5,000 LoC
 +  languages:
++  - CSS
++  - HTML
 +  - Java
++  - \LaTeX
++  - LilyPond
++  - make
 +  - Objective-C
 +  - Swift
 +- fluency: \> 3,000 LoC
 +  languages:
 +  - Haskell
 +  - \hrefootnote{http://idris-lang.org}{Idris}
++  - JavaScript
 +  - Perl
 +  - PHP
 +  - Python
-+- fluency: < 1,000 LoC
++- fluency: < 2,000 LoC
 +  languages:
 +  - \hrefootnote{http://wiki.portal.chalmers.se/agda}{Agda}
 +  - C
-+  # - C$^\sharp$
 +  - C\hspace{-.05em}\raisebox{.5ex}{\tiny $++$}
 +  - Coq
 +  - Elixir
++  - Elm
 +  - F$^\sharp$
++  - \hrefootnote{https://www.gap-system.org/}{GAP}
 +  - Go
++  # - Julia
++  # - Kotlin
 +  - OCaml
-+  - SML
++  # - Pacal
++  - R
++  - Ruby
++  - Rust
++  # - SML
++  - VB.NET
  publications:
  - name: Episode 59 - Eric Bailey
    publisher: Functional Geekery
@@ -167,10 +181,37 @@ index 6383264..90e01c2 100644
    summary: 'Casual interview re: my interest in programming and technology.'
    website: http://tech.mn/news/2013/08/21/know-this-nerd-meet-eric-bailey/
  skills:
-@@ -163,6 +189,33 @@ volunteer:
+@@ -163,6 +203,58 @@ volunteer:
    summary: My code passed W3C validation before it was cool.
    website: https://web.archive.org/web/20041213172447/http://undeadart.org/
  work:
++- company: Sportradar
++  position: Software Engineer
++  startDate: July 2017
++  summary: |
++    Floating between teams and roles, and working with other offices toward
++    uniformity, I'm leading development of the CI pipeline in Minneapolis.
++  keywords:
++  - Elixir
++  - Haskell
++  - JavaScript
++  - Ruby
++  - Automation
++  - CI
++  - DevOps
++  - Docker
++  - Documentation
++  - GitLab
++  - Helm
++  - JIRA
++  - Kubernetes
++  - nginx
++  - Nix
++  - Property-based testing
++  - RabbitMQ
++  - Redis
++  - Slack
++  - Varnish
 +- company: Electric Wizardry
 +  position: Owner
 +  # website: https://www.linkedin.com/in/ericbee#projects
@@ -182,26 +223,24 @@ index 6383264..90e01c2 100644
 +  #   - https://www.voicehive.com
 +  # startDate: Aug 2012
 +  startDate: 2012
-+  endDate: Present
 +  summary: |
-+    Periodically, I do contract work as my LLC. Such work has included
++    Periodically, I do contract work, which has included
 +    \hrefootnote{http://www.rfmoeller.com}{SQL security hole patching}, updating
 +    \hrefootnote{https://www.honeywell.com}{a bespoke kiosk web app} to work on
 +    IE8, porting
 +    \hrefootnote{https://play.google.com/store/apps/details?id=com.caspersen.narrative}{an
-+    interactive Q\&A app} from iOS to Android, writing a custom podcast app for
++    interactive Q\&A app} from iOS to Android, a custom podcast app for
 +    \hrefootnote{https://itunes.apple.com/us/app/tom-barnard-podcast-app/id1131763252}{iOS}
 +    and
 +    \hrefootnote{https://play.google.com/store/apps/details?id=com.tombarnard.show}{Android},
-+    developing
 +    \hrefootnote{https://web.archive.org/web/20130711014544/http://definest.co}{a
-+    vocabulary-building app} for iOS, and helping implement and maintain
++    vocabulary-building app} for iOS, and helping develop and maintain
 +    \hrefootnote{https://www.voicehive.com}{a real-time audience interaction web
 +    app}.\vspace{-2em}
  - company: Open Source
    highlights:
    - 'exercism.io: xclojure, xelisp, xlfe, xracket, xscheme'
-@@ -177,159 +230,96 @@ work:
+@@ -177,159 +269,102 @@ work:
    - 'NixOS: lfe, erlang, elixir'
    - '...'
    keywords:
@@ -209,8 +248,10 @@ index 6383264..90e01c2 100644
 -  - Erlang
    - Clojure
 +  - Erlang
++  - Idris
 +  - LFE
-+  - \{Common,Emacs\} Lisp
++  - \LaTeX
++  - Lisp
    - Nix
 +  - Racket
 +  - Scheme
@@ -221,23 +262,25 @@ index 6383264..90e01c2 100644
 -  website: https://www.openhub.net/accounts/yurrriq
 +  startDate: 2015
 +  summary: |
-+    I make frequent contributions to open source, mostly in
-+    (\hrefootnote{https://github.com/rvirding/lfe}{Lisp Flavoured}) Erlang.
-+    Refer to my \hrefootnote{https://www.openhub.net/accounts/yurrriq}{OpenHUB}
-+    and \hrefootnote{https://github.com/yurrriq}{GitHub} profiles for more
-+    information. Recently, I\'ve been helping organize
-+    \hrefootnote{https://github.com/elli-lib}{an effort to modernize and
-+    maintain elli and its middlewares}.
++    Whenever I'm able, I contribute to open source. Refer to my
++    \hrefootnote{https://github.com/yurrriq}{GitHub} and
++    \hrefootnote{https://www.openhub.net/accounts/yurrriq}{OpenHUB} profiles for
++    more information. Notably, I helped improve docstring handling in
++    \hrefootnote{https://github.com/rvirding/lfe}{LFE}, help
++    maintain \hrefootnote{https://github.com/elli-lib}{a modernized elli and its
++    middlewares}, and help maintain several
++    \hrefootnote{http://exercism.io}{Exercism} tracks.
 +  # website: https://www.openhub.net/accounts/yurrriq
 +  # websites:
 +  #   - https://www.openhub.net/accounts/yurrriq
 +  #   - https://github.com/yurrriq
  - company: Frontend Masters
 -  endDate: 2016-11-01
-+  # endDate: Nov 2016
-+  endDate: 2016
++  endDate: Nov 2016
++  # endDate: 2016
    keywords:
 +  - Erlang
++  - \LaTeX
 +  - LFE
    - Objective-C
    - Swift
@@ -255,6 +298,7 @@ index 6383264..90e01c2 100644
 -  - data-driven
 -  - documentation
 +  - RxSwift
++  - Slack
 +  - Video streaming
    position: Software Engineer
 -  startDate: 2015-08-15
@@ -286,36 +330,37 @@ index 6383264..90e01c2 100644
 -    a customizable, data-driven UI with dynamic rendering and mobile-friendly drag-and-drop
 -    mechanics.
 -  website: https://www.transvoyant.com
-+  # startDate: Aug 2015
-+  startDate: 2015
++  startDate: Aug 2015
++  # startDate: 2015
 +  summary: |
-+    Starting as an occasional iOS contractor from 2013 through 2015, I joined
-+    \hrefootnote{https://frontendmasters.com}{the company} full-time by January
-+    2016. Eventually, my responsibilities shifted from maintaining the iOS app
-+    to re-architecting the outdated backend, including codifying the data model,
-+    handling DevOps, designing and building an elli-based web app in LFE,
-+    maintaining parity (as appropriate) with the existing system and designing
-+    and building its modular, data-driven successor.
++    Starting as an occasional iOS contractor from 2013--2015, I joined
++    \hrefootnote{https://frontendmasters.com}{the company} full-time in 2016.
++    Soon, my responsibilities shifted from iOS to re-architecting the backend,
++    including codifying the data model, handling DevOps, building an elli-based
++    web app in LFE, maintaining parity with the existing system and building its
++    modular, data-driven successor.
 +  # website: https://frontendmasters.com
  - company: invisible friend
 -  endDate: 2015-08-01
-+  # endDate: Aug 2015
-+  endDate: 2015
++  endDate: Aug 2015
++  # endDate: 2015
    keywords:
    - Clojure(Script)
    - Node.js
    - Chrome
    - Docker
--  - DevOps
++  - Datomic
+   - DevOps
 -  - LevelDB
--  - PostgreSQL
-   - Datomic
++  - JIRA
 +  - \{Level,Rethink\}DB
-+  - PostgreSQL
++  - Nix
+   - PostgreSQL
+-  - Datomic
    - Redis
 -  - startup
 -  - small team
-+  - DevOps
++  - Slack
    position: Software Engineer
 -  startDate: 2014-05-01
 -  summary: As a Software Engineer and half of the core engineering team at this social
@@ -337,17 +382,16 @@ index 6383264..90e01c2 100644
 -  website: http://www.rfmoeller.com
 -- company: Honeywell Lifecycle Solutions
 -  endDate: 2013-06-07
-+  # startDate: May 2014
-+  startDate: 2014
++  startDate: May 2014
++  # startDate: 2014
 +  summary: |
-+    As a Software Engineer and half of the core engineering team at this
-+    \hrefootnote{https://plink.love}{social media startup}, I was passionate
-+    about writing efficient, modular, well-tested code in a very agile
-+    environment.
++    As half of the core engineering team at this
++    \hrefootnote{https://plink.love}{social media startup}, I passionately wrote
++    efficient, modular, well-tested code in an agile environment.
 +  # website: https://invisiblefriend.com/wtf
 +- company: Transvoyant
-+  # endDate: Jul 2015
-+  endDate: 2015
++  endDate: Jul 2015
++  # endDate: 2015
    keywords:
 -  - HTML
 +  - ClojureScript
@@ -420,8 +464,8 @@ index 6383264..90e01c2 100644
 -    audience interaction web app.
 -  website: https://www.voicehive.com
 -
-+  # startDate: Nov 2014
-+  startDate: 2014
++  startDate: Nov 2014
++  # startDate: 2014
 +  summary: |
 +    Building on the existing Java-based REST API, I spearheaded development of a
 +    new web front end in ClojureScript. It featured a user-customizable,
