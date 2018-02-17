@@ -13,7 +13,8 @@ GO ?= $(shell nix-build --no-out-link '<nixpkgs>' -A go)/bin/go
 .PHONY: all bin/ym serve test theme watch
 
 
-all: $(OUT_DIR)/index.html
+# all: $(OUT_DIR)/index.html
+all: $(OUT_DIR)/resume.pdf
 
 
 $(OUT_DIR)/index.html: $(RESUME) theme resume.json
@@ -36,7 +37,7 @@ node_modules: package.json
 	@ npm install
 
 
-resume.pdf: resume.tex resume-tweaked.yml resume.yml.patch tccv.cls
+$(OUT_DIR)/resume.pdf: resume.tex resume-tweaked.yml resume.yml.patch tccv.cls
 	pandoc --template $(filter-out $(lastword $^),$^) -o $@
 
 
