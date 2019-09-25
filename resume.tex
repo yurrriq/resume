@@ -1,24 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Classicthesis-Styled CV
-% LaTeX Template
-% Version 1.0 (22/2/13)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Alessandro Plasmati
-%
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% --------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-% --------------------------------------------------------------------
-
-\documentclass{scrartcl}
+\documentclass[10pt,a4paper]{scrartcl}
 
 \reversemarginpar
 
@@ -26,7 +6,6 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
-\usepackage{blindtext}
 \usepackage[nochapters]{classicthesis}
 \usepackage[LabelsAligned]{currvita}
 
@@ -50,7 +29,7 @@
 
 \setlength\parindent{0pt}
 
-% --------------------------------------------------------------------
+%% -----------------------------------------------------------------------------
 
 \begin{document}
 
@@ -58,48 +37,28 @@
 
 \pagestyle{empty}
 
-% --------------------------------------------------------------------
-%	NAME AND CONTACT INFORMATION SECTION
-% --------------------------------------------------------------------
+%% -----------------------------------------------------------------------------
+%%                    NAME AND CONTACT INFORMATION SECTION
+%% -----------------------------------------------------------------------------
 
 \begin{cv}
-  % Name
   {\spacedallcaps{$basics.name$}}
   \vspace{1em}
 
-  % Personal information heading
   \noindent\spacedlowsmallcaps{Personal Information}
   \vspace{0.5em}
 
-  % Email address
-  \NewEntry{email}{\href{mailto:eric@ericb.me}{eric@ericb.me}}
+  %% \NewEntry{email}{\href{mailto:eric@ericb.me}{eric@ericb.me}}
 
-  % \vspace{-0.5em}
+  \NewEntry{GitHub}{\url{https://github.com/yurrriq}}
 
-  % Website
-  % \NewEntry{blog}{\url{http://blorg.ericb.me}}
-  % \NewEntry{GitHub}{\url{https://github.com/yurrriq}}
-
-  \vspace{-0.5em}
-
-  % Phone number
   \NewEntry{phone}{\href{tel:1-612-327-1274}{(612) 327-1274}}
 
   \vfill
 
-  % \noindent\spacedlowsmallcaps{Objective}
-  % \vspace{0.5em}
-
-  % \Description{Work with a disciplined team to accomplish well-defined goals in
-  %   an open and collaborative environment, using the right technologies for the
-  %   tasks at hand.}
-  % \vspace{-0.5em}
-
-  % \vfill
-
-  % ------------------------------------------------------------------
-  %	COMPUTER SKILLS
-  % ------------------------------------------------------------------
+  %% ---------------------------------------------------------------------------
+  %%                            COMPUTER SKILLS
+  %% ---------------------------------------------------------------------------
 
   \spacedlowsmallcaps{Programming Languages}
   \vspace{0.5em}
@@ -112,9 +71,9 @@
 
   \vfill
 
-  % ------------------------------------------------------------------
-  %	WORK EXPERIENCE
-  % ------------------------------------------------------------------
+  %% ---------------------------------------------------------------------------
+  %%                            WORK EXPERIENCE
+  %% ---------------------------------------------------------------------------
 
   \noindent\spacedlowsmallcaps{Select Work Experience}
   \vspace{0.5em}
@@ -137,7 +96,7 @@
     \url{$work.website$}\newline
     $endif$
     $endif$
-    % \vspace{0.5em}
+    %% \vspace{0.5em}
     $if(work.keywords)$
     \ \\ \vspace{-0.5em}
     \textit{Tech}:
@@ -148,9 +107,9 @@
   \vfill
   \newpage
 
-  % ------------------------------------------------------------------
-  %	EDUCATION
-  % ------------------------------------------------------------------
+  %% ---------------------------------------------------------------------------
+  %%                               EDUCATION
+  %% ---------------------------------------------------------------------------
 
   \spacedlowsmallcaps{Education}
   \vspace{0.5em}
@@ -160,16 +119,16 @@
   \NewEntry{$if(education.startDate)$$education.startDate$--$endif$$education.endDate$}{$education.institution$}
 
   \Description{\MarginText{$education.studyType$$if(education.area)$ $education.area$$endif$}
-    % $education.summary$
+    %% $education.summary$
     \textit{Select Courses}: $for(education.courses)$$education.courses$$sep$, $endfor$}
 
   $endfor$
 
   \vfill
 
-  % ------------------------------------------------------------------
-  %	OTHER INFORMATION
-  % ------------------------------------------------------------------
+  %% ---------------------------------------------------------------------------
+  %%                           OTHER INFORMATION
+  %% ---------------------------------------------------------------------------
 
   \spacedlowsmallcaps{Miscellanea}
   \vspace{0.5em}
@@ -194,11 +153,11 @@
       Member}\newline Helped lead the project, participating in discussions and
     contributing code.}
 
-  % ------------------------------------------------
+  %% ---------------------------------------------------------------------------
 
-  % Create a new length for the length of languages to keep them equally spaced
+  %% Create a new length for the length of languages to keep them equally spaced
   \newlength{\langbox}
-  % Length equals the length of "English"
+  %% Length equals the length of "English"
   \settowidth{\langbox}{English}
 
   \Description{\MarginText{Spoken Languages}\parbox{\langbox}{\textsc{English}}
