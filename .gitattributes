@@ -5,9 +5,8 @@ node-env.nix linguist-generated
 node-packages.nix linguist-generated
 node.nix linguist-generated
 resume.yml.patch linguist-generated
-
 index.js linguist-vendored
 resume.hbs linguist-vendored
 style.css linguist-vendored
-
 *.pdf filter=lfs diff=lfs merge=lfs -text
+docs/resume.pdf text !filter !merge !diff
