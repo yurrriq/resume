@@ -7,7 +7,9 @@ with import <nixpkgs> {
           bera
           classicthesis
           currvita
+          datetime
           endnotes
+          fmtcount
           fpl
           hyperref
           mathpazo

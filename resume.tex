@@ -11,8 +11,24 @@
 
 \renewcommand{\cvheadingfont}{\LARGE\color{Maroon}}
 
+\usepackage{datetime}
+
 \usepackage{hyperref}
-\hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon}
+\hypersetup{%
+  bookmarks,
+  breaklinks,
+  colorlinks,
+  linkcolor = {Maroon},
+  pdfauthor = {Eric Bailey},
+  pdftitle = {Eric Bailey: Curriculum Vit\ae},
+  pdfsubject = {A brief overview of my skills and work history},
+  pdfkeywords = {cloud architecture, CI/CD, DevOps, functional programming, SRE},
+  pdfinfo = {
+    CreationDate = {D:20161202042800},
+    ModDate = {D:\pdfdate}
+  },
+  urlcolor = {Maroon}
+}
 
 % https://tex.stackexchange.com/a/56146
 \usepackage{endnotes}
@@ -41,6 +57,7 @@
 %%                    NAME AND CONTACT INFORMATION SECTION
 %% -----------------------------------------------------------------------------
 
+\pdfbookmark{Personal Information}{info}
 \begin{cv}
   {\spacedallcaps{$basics.name$}}
   \vspace{1em}
@@ -61,6 +78,7 @@
   %% ---------------------------------------------------------------------------
 
   \spacedlowsmallcaps{Programming Languages}
+  \pdfbookmark{Programming Languages}{proglang}
   \vspace{0.5em}
 
   $for(programming)$
@@ -76,12 +94,13 @@
   %% ---------------------------------------------------------------------------
 
   \noindent\spacedlowsmallcaps{Select Work Experience}
+  \pdfbookmark{Select Work Experience}{work}
   \vspace{0.5em}
 
   $for(work)$
-
+  \pdfbookmark[1]{$work.position$$if(work.company)$ @ $work.company$$endif$}{work}
   \NewEntry{$work.startDate$--$if(work.endDate)$$work.endDate$$else$Present$endif$}
-  {$work.position$, \textsc{$work.company$}}
+  {$work.position$$if(work.company)$, \textsc{$work.company$}$endif$}
 
   \Description{\MarginText{$work.company$}$work.summary$\newline
     $if(work.websites)$
@@ -102,6 +121,8 @@
     \textit{Tech}:
     $for(work.keywords)$$work.keywords$$sep$\ \textbar\ $endfor$
     $endif$}
+  $sep$
+
   $endfor$
 
   \vfill
@@ -112,15 +133,17 @@
   %% ---------------------------------------------------------------------------
 
   \spacedlowsmallcaps{Education}
+  \pdfbookmark{Education}{school}
   \vspace{0.5em}
 
   $for(education)$
-
+  \pdfbookmark[1]{$education.studyType$ @ $education.institution$}{school}
   \NewEntry{$if(education.startDate)$$education.startDate$--$endif$$education.endDate$}{$education.institution$}
 
   \Description{\MarginText{$education.studyType$$if(education.area)$ $education.area$$endif$}
     %% $education.summary$
     \textit{Select Courses}: $for(education.courses)$$education.courses$$sep$, $endfor$}
+  $sep$
 
   $endfor$
 
@@ -131,24 +154,31 @@
   %% ---------------------------------------------------------------------------
 
   \spacedlowsmallcaps{Miscellanea}
+  \pdfbookmark{Miscellanea}{misc}
   \vspace{0.5em}
 
+  \pdfbookmark[1]{Interviews}{misc}
   \Description{\MarginText{Interviews}
+    \pdfbookmark[2]{Functional Geekery}{misc}
     \textsc{Functional Geekery}:
     \hrefootnote{https://www.functionalgeekery.com/episode-59-eric-bailey/}{Episode 59}\newline
     ``In this episode... [I] talk [about my] entry into functional programming;
     work with Scheme, Clojure, Haskell, and LFE; ... Exercism.io; and much more.''}
 
+  \pdfbookmark[2]{Know This Nerd?}{misc}
   \Description{\textsc{Know This Nerd?}
     \hrefootnote{http://tech.mn/news/2013/08/21/know-this-nerd-meet-eric-bailey/}{Meet
       Eric Bailey}\newline
     Casual interview re: my interest in programming and technology.}
 
+  \pdfbookmark[1]{Volunteering}{misc}
   \Description{\MarginText{Volunteering}
+    \pdfbookmark[2]{ClojureBridge}{misc}
     \hrefootnote{http://clojurebridgemn.org/}{ClojureBridge MN} \textsc{Teaching
       Assistant}\newline At two workshops, I've volunteered to help women,
     trans, genderqueer, and gender non-conforming people learn (more) Clojure.}
 
+  \pdfbookmark[2]{UndeadArt.org}{misc}
   \Description{\hrefootnote{UndeadArt.org}{UndeadArt.org} \textsc{Web Team
       Member}\newline Helped lead the project, participating in discussions and
     contributing code.}
@@ -160,6 +190,7 @@
   %% Length equals the length of "English"
   \settowidth{\langbox}{English}
 
+  \pdfbookmark[1]{Spoken Languages}{misc}
   \Description{\MarginText{Spoken Languages}\parbox{\langbox}{\textsc{English}}
     \hskip 1em
     Native speaker}
@@ -171,6 +202,7 @@
   $endfor$
 
   \vfill
+  \pdfbookmark{Notes}{notes}
   \theendnotes
   \vfill
 \end{cv}

@@ -31,6 +31,7 @@ node_modules: package.json
 	@ npm install
 
 
+$(OUT_DIR)/resume.pdf: export TZ='America/Chicago'
 $(OUT_DIR)/resume.pdf: resume.tex resume-tweaked.yml resume.yml.patch
 	pandoc --template $(filter-out $(lastword $^),$^) -o $@
 
