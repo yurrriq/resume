@@ -38,7 +38,7 @@ $(OUT_DIR)/resume.pdf: resume.tex resume-tweaked.yml resume.yml.patch
 
 resume.yml: resume.json
 	@ echo "---"  >$@
-	@ yq -y '.' $< >>$@
+	@ yq -y --indentless-lists '.' $< >>$@
 	@ echo "---" >>$@
 
 

@@ -5,5 +5,6 @@ pkgs.mkShell {
     git
     latex
     pandoc
+    yq
   ];
 }
