@@ -1,6 +1,6 @@
 # Résumé
 
-My [résumé][] in [JSON Resume][] and [PDF][] format.
+My résumé in ~~[JSON Resume][]~~ and [PDF][] format.
 
 [résumé]: https://yurrriq.github.io/resume/
 [JSON Resume]: https://jsonresume.org
