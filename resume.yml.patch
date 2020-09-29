@@ -1,8 +1,8 @@
 diff --git a/resume.yml b/resume-tweaked.yml
-index 93c3d84..ef72a4a 100644
+index 93c3d84..fa05ccd 100644
 --- a/resume.yml
 +++ b/resume-tweaked.yml
-@@ -1,334 +1,349 @@
+@@ -1,334 +1,352 @@
  ---
 +awards:
 +- awarder: University of Minnesota
@@ -304,26 +304,27 @@ index 93c3d84..ef72a4a 100644
 +programming:
 +- fluency: \> 20,000 LoC
 +  languages:
++  - \LaTeX
 +  - (Bourne) Shell
 +  - Clojure
 +  - \hrefootnote{http://lfe.io/}{(Lisp Flavoured)} Erlang
++  - Haskell
 +  - Lisp/Scheme (various)
 +- fluency: \> 10,000 LoC
 +  languages:
 +  - HTML
 +  - Java
-+  - \LaTeX
 +  - \hrefootnote{http://lilypond.org/}{LilyPond}
 +  - make
++  - \hrefootnote{http://idris-lang.org}{Idris}
 +  - Objective-C
 +  - Swift
 +- fluency: \> 5,000 LoC
 +  languages:
 +  - CSS
-+  - Haskell
-+  - \hrefootnote{http://idris-lang.org}{Idris}
 +  - JavaScript
 +  - PHP
++  - Python
 +- fluency: < 5,000 LoC
 +  languages:
 +  - \hrefootnote{http://wiki.portal.chalmers.se/agda}{Agda}
@@ -337,10 +338,10 @@ index 93c3d84..ef72a4a 100644
 +  - Go
 +  - OCaml
 +  - Perl
-+  - Python
 +  - \hrefootnote{https://www.r-project.org/}{R}
 +  - Ruby
 +  - Rust
++  - \hrefootnote{https://www.sagemath.org/}{SageMath}
 +  # - VB.NET
  publications:
  - name: Episode 59 - Eric Bailey
@@ -468,9 +469,10 @@ index 93c3d84..ef72a4a 100644
 +  - Bash
 +  - Go
 +  - \hrefootnote{https://nixos.org/nix/}{Nix}
-+  # - CI
-+  # - Docker
 +  - Documentation
++  - AWS
++  # - CloudFormation
++  # - Docker
 +  - GitLab CI
 +  - Helm
 +  - JIRA
@@ -553,7 +555,8 @@ index 93c3d84..ef72a4a 100644
 +    more information.
 +- company: Electric Wizardry
 +  position: Owner
-+  startDate: 2012
++  endDate: Oct 2018
++  startDate: Nov 2012
 +  summary: |
 +    My contract work has included \hrefootnote{http://www.rfmoeller.com}{SQL
 +    security hole patching}, updating \hrefootnote{https://www.honeywell.com}{a
