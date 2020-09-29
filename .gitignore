@@ -48,3 +48,5 @@ auto/
 
 # Unzipped template
 tccv-master/
+
+/result*

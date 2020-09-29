@@ -33,7 +33,8 @@ node_modules: package.json
 
 $(OUT_DIR)/resume.pdf: export TZ='America/Chicago'
 $(OUT_DIR)/resume.pdf: resume.tex resume-tweaked.yml resume.yml.patch
-	pandoc --template $(filter-out $(lastword $^),$^) -o $@
+	@ mkdir -p $(@D)
+	pandoc -f markdown --template $(filter-out $(lastword $^),$^) -o $@
 
 
 resume.yml: resume.json
