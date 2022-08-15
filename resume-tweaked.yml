@@ -105,6 +105,7 @@ programming:
 - fluency: \> 5,000 LoC
   languages:
   - CSS
+  - Go
   - JavaScript
   - PHP
   - Python
@@ -118,7 +119,6 @@ programming:
   - \hrefootnote{https://elm-lang.org/}{Elm}
   - F$^\sharp$
   - \hrefootnote{https://www.gap-system.org/}{GAP}
-  - Go
   - OCaml
   - Perl
   - \hrefootnote{https://www.r-project.org/}{R}

@@ -1,5 +1,5 @@
 diff --git a/resume.yml b/resume-tweaked.yml
-index 93c3d84..fa05ccd 100644
+index 93c3d84..a0f1add 100644
 --- a/resume.yml
 +++ b/resume-tweaked.yml
 @@ -1,334 +1,352 @@
@@ -322,6 +322,7 @@ index 93c3d84..fa05ccd 100644
 +- fluency: \> 5,000 LoC
 +  languages:
 +  - CSS
++  - Go
 +  - JavaScript
 +  - PHP
 +  - Python
@@ -335,7 +336,6 @@ index 93c3d84..fa05ccd 100644
 +  - \hrefootnote{https://elm-lang.org/}{Elm}
 +  - F$^\sharp$
 +  - \hrefootnote{https://www.gap-system.org/}{GAP}
-+  - Go
 +  - OCaml
 +  - Perl
 +  - \hrefootnote{https://www.r-project.org/}{R}
