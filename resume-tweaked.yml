@@ -85,7 +85,7 @@ languages:
 - fluency: Grunnleggende ferdigheter
   language: Norsk
 programming:
-- fluency: \> 20,000 LoC
+- fluency: \> 20,000 SLoC
   languages:
   - \LaTeX
   - (Bourne) Shell
@@ -93,7 +93,7 @@ programming:
   - \hrefootnote{http://lfe.io/}{(Lisp Flavoured)} Erlang
   - Haskell
   - Lisp/Scheme (various)
-- fluency: \> 10,000 LoC
+- fluency: \> 10,000 SLoC
   languages:
   - HTML
   - Java
@@ -102,14 +102,14 @@ programming:
   - \hrefootnote{http://idris-lang.org}{Idris}
   - Objective-C
   - Swift
-- fluency: \> 5,000 LoC
+- fluency: \> 5,000 SLoC
   languages:
   - CSS
   - Go
   - JavaScript
   - PHP
   - Python
-- fluency: < 5,000 LoC
+- fluency: < 5,000 SLoC
   languages:
   - \hrefootnote{http://wiki.portal.chalmers.se/agda}{Agda}
   - C
