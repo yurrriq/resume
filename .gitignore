@@ -50,3 +50,4 @@ auto/
 tccv-master/
 
 /result*
+/.direnv/
