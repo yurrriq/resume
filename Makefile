@@ -61,3 +61,9 @@ theme: $(THEME_PATH)
 
 
 watch: serve
+
+
+part ?= patch
+.PHONY: bump-version
+bump-version:
+	semver bump ${part} $(file <VERSION) | tr -d '\n' >VERSION

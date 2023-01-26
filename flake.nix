@@ -3,7 +3,7 @@
 
   inputs = {
     flake-utils.url = "github:numtide/flake-utils";
-    nixpkgs.url = "github:nixos/nixpkgs/release-22.05";
+    nixpkgs.url = "github:nixos/nixpkgs/release-22.11";
   };
 
   outputs = { self, flake-utils, nixpkgs }:
@@ -40,7 +40,9 @@
       in
       {
         devShells.default = pkgs.mkShell {
-          buildInputs = self.packages.${system}.default.nativeBuildInputs;
+          buildInputs = (with pkgs; [
+            semver-tool
+          ]) ++ self.packages.${system}.default.nativeBuildInputs;
         };
 
         packages.default = pkgs.stdenv.mkDerivation rec {
