@@ -23,6 +23,17 @@ basics:
     url: https://stackoverflow.com/users/1793234/yurrriq
     username: yurrriq
   website: http://ericb.me
+certifications:
+- issuer: The Linux Foundation
+  endDate: Jan 2025
+  startDate: Jan 2022
+  summary: |
+    Earners demonstrated proficiency in Application Lifecycle Management,
+    Installation, Configuration & Validation, Core Concepts, Networking,
+    Scheduling, Security, Cluster Maintenance, Logging / Monitoring, Storage,
+    and Troubleshooting.
+  title: "CKA: Certified Kubernetes Administrator"
+  url: https://www.credly.com/badges/9a8e2e91-5959-43d6-806a-63d0ab8862c5
 education:
 - area: in Music
   courses:
@@ -105,6 +116,7 @@ programming:
 - fluency: \> 5,000 SLoC
   languages:
   - CSS
+  - Elixir
   - Go
   - JavaScript
   - PHP
@@ -115,7 +127,6 @@ programming:
   - C
   - C\hspace{-.05em}\raisebox{.5ex}{\tiny $++$}
   - \hrefootnote{https://coq.inria.fr/}{Coq}
-  - Elixir
   - \hrefootnote{https://elm-lang.org/}{Elm}
   - F$^\sharp$
   - \hrefootnote{https://www.gap-system.org/}{GAP}
@@ -180,6 +191,7 @@ volunteer:
 work:
 - company: Sportradar
   position: Lead Platform Engineer
+  # endDate: March 2021
   startDate: July 2019
   summary: |
     As the first global
@@ -187,18 +199,26 @@ work:
     with a focus on automation, reproducibility, and company-wide cohesion
     through policies and best practices I help design, I work to empower
     developers, encourage and facilitate frequent shipping of code, and enable
-    sysadmins to maintain good sleep hygiene, across multiple time zones.
+    sysadmins to maintain good sleep hygiene, across multiple time zones.  From
+    March 2021 to July 2022, I led a team of two, focusing further on providing
+    a solid PaaS to internal ``customers.''  From July 2022, I transitioned into
+    an architect role, handing over the lead responsibilities of our expanded
+    team.
   keywords:
-  - Bash
+  # - Bash
   - Go
   - \hrefootnote{https://nixos.org/nix/}{Nix}
-  - Documentation
+  - Terraform
+  - Architecture
+  - Compliance
+  # - Documentation
+  - Policy
   - AWS
   # - CloudFormation
   # - Docker
-  - GitLab CI
-  - Helm
-  - JIRA
+  # - GitLab CI
+  # - Helm
+  # - JIRA
   - Kubernetes
 - # company: Sportradar
   endDate: July 2019
@@ -209,18 +229,18 @@ work:
     containerizing legacy applications and infrastructure, and configuring
     ephemeral development environments.
   keywords:
-  - Bash
+  # - Bash
   - Haskell
-  - Nix
-  # - CI
-  # - DevOps
+  # - Nix
+  # # - CI
+  # # - DevOps
   - Docker
-  # - Documentation
+  # # - Documentation
   - GitLab CI
   - Helm
-  # - JIRA
-  - Kubernetes
-  - nginx
+  # # - JIRA
+  # - Kubernetes
+  # - nginx
   - Varnish
 - # company: Sportradar
   endDate: Dec 2017
@@ -233,7 +253,7 @@ work:
   - Elixir
   - JavaScript
   - Ruby
-  - Automation
+  # - Automation
   - Property-based testing
   - RabbitMQ
   - Redis
@@ -275,12 +295,8 @@ work:
   summary: |
     My contract work has included \hrefootnote{http://www.rfmoeller.com}{SQL
     security hole patching}, updating \hrefootnote{https://www.honeywell.com}{a
-    bespoke kiosk web app} to work on IE8, porting
-    \hrefootnote{https://play.google.com/store/apps/details?id=com.caspersen.narrative}{an
-    interactive Q\&A app} from iOS to Android, a custom podcast app for
-    \hrefootnote{https://itunes.apple.com/us/app/tom-barnard-podcast-app/id1131763252}{iOS}
-    and
-    \hrefootnote{https://play.google.com/store/apps/details?id=com.tombarnard.show}{Android},
+    bespoke kiosk web app} to work on IE8, porting an interactive Q\&A app from
+    iOS to Android, a custom podcast app for iOS and Android,
     \hrefootnote{https://web.archive.org/web/20130711014544/http://definest.co}{a
     vocabulary-building app} for iOS, and helping develop and maintain
     \hrefootnote{https://www.voicehive.com}{a real-time audience interaction web
@@ -288,20 +304,20 @@ work:
 - company: Frontend Masters
   endDate: Nov 2016
   keywords:
-  - Erlang
-  - \LaTeX
-  - LFE
+  - (Lisp Flavoured) Erlang
+  # - \LaTeX
+  # - LFE
   - Objective-C
-  - Swift
-  - CI
-  - Core Data
-  - DevOps
-  - Docker
-  - Documentation
-  - Realm
-  - REST
-  - RxSwift
-  - Slack
+  - (Rx)Swift
+  # - CI
+  # - Core Data
+  #- DevOps
+  # - Docker
+  # - Documentation
+  # - Realm
+  # - REST
+  # - RxSwift
+  # - Slack
   - Video streaming
   position: Software Engineer
   startDate: Aug 2015
@@ -316,16 +332,16 @@ work:
   keywords:
   - Clojure(Script)
   - Node.js
-  - Chrome
+  # - Chrome
   - Docker
-  - Datomic
-  - DevOps
-  - JIRA
+  # - Datomic
+  # - DevOps
+  # - JIRA
   - \{Level,Rethink\}DB
   - Nix
   - PostgreSQL
   - Redis
-  - Slack
+  # - Slack
   position: Software Engineer
   startDate: May 2014
   summary: |
