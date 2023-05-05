@@ -157,6 +157,27 @@
   \spacedlowsmallcaps{Miscellanea}
   \vspace{0.5em}
 
+  \pdfbookmark[1]{Certifications}{certs}
+  \Description{\MarginText{Certifications}
+    $for(certifications)$
+    \pdfbookmark[2]{$certifications.title$}{certs}
+    \hrefootnote{$certifications.url$}{\textsc{$certifications.title$}} ($certifications.issuer$)\newline
+    \textit{Issued}: $certifications.startDate$. \textit{Expires}: $certifications.endDate$.\newline
+    ``$certifications.summary$''
+    $endfor$}
+
+  \pdfbookmark[1]{Volunteering}{volunteering}
+  \Description{\MarginText{Volunteering}
+    \pdfbookmark[2]{ClojureBridge}{volunteering}
+    \hrefootnote{http://clojurebridgemn.org/}{ClojureBridge MN} \textsc{Teaching
+      Assistant}\newline At two workshops, I've volunteered to help women,
+    trans, genderqueer, and gender non-conforming people learn (more) Clojure.}
+
+  \pdfbookmark[2]{UndeadArt.org}{volunteering}
+  \Description{\hrefootnote{UndeadArt.org}{UndeadArt.org} \textsc{Web Team
+      Member}\newline Helped lead the project, participating in discussions and
+    contributing code.}
+
   \pdfbookmark[1]{Interviews}{interviews}
   \Description{\MarginText{Interviews}
     \pdfbookmark[2]{Functional Geekery}{interviews}
@@ -170,18 +191,6 @@
     \hrefootnote{http://tech.mn/news/2013/08/21/know-this-nerd-meet-eric-bailey/}{Meet
       Eric Bailey}\newline
     Casual interview re: my interest in programming and technology.}
-
-  \pdfbookmark[1]{Volunteering}{volunteering}
-  \Description{\MarginText{Volunteering}
-    \pdfbookmark[2]{ClojureBridge}{volunteering}
-    \hrefootnote{http://clojurebridgemn.org/}{ClojureBridge MN} \textsc{Teaching
-      Assistant}\newline At two workshops, I've volunteered to help women,
-    trans, genderqueer, and gender non-conforming people learn (more) Clojure.}
-
-  \pdfbookmark[2]{UndeadArt.org}{volunteering}
-  \Description{\hrefootnote{UndeadArt.org}{UndeadArt.org} \textsc{Web Team
-      Member}\newline Helped lead the project, participating in discussions and
-    contributing code.}
 
   %% ---------------------------------------------------------------------------
 
