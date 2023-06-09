@@ -22,7 +22,7 @@ basics:
   - network: Stack Overflow
     url: https://stackoverflow.com/users/1793234/yurrriq
     username: yurrriq
-  website: http://ericb.me
+  website: https://blorg.ericb.me
 certifications:
 - issuer: The Linux Foundation
   endDate: Jan 2025
@@ -149,7 +149,7 @@ publications:
   publisher: TECHdotMN
   year: 2013
   summary: 'Casual interview re: my interest in programming and technology.'
-  website: http://tech.mn/news/2013/08/21/know-this-nerd-meet-eric-bailey/
+  website: https://web.archive.org/web/20170314130038/http://tech.mn/news/2013/08/21/know-this-nerd-meet-eric-bailey/
 skills:
 - keywords:
   - Clojure
@@ -293,7 +293,7 @@ work:
   endDate: Oct 2018
   startDate: Nov 2012
   summary: |
-    My contract work has included \hrefootnote{http://www.rfmoeller.com}{SQL
+    My contract work has included \hrefootnote{https://rfmoeller.com}{SQL
     security hole patching}, updating \hrefootnote{https://www.honeywell.com}{a
     bespoke kiosk web app} to work on IE8, porting an interactive Q\&A app from
     iOS to Android, a custom podcast app for iOS and Android,
@@ -344,10 +344,11 @@ work:
   # - Slack
   position: Software Engineer
   startDate: May 2014
+  # https://plink.love
   summary: |
-    As half of the core engineering team at this
-    \hrefootnote{https://plink.love}{social media startup}, I passionately wrote
-    efficient, modular, well-tested code in an agile environment.
+    As half of the core engineering team at this social media startup, I
+    passionately wrote efficient, modular, well-tested code in an agile
+    environment.
 - company: Transvoyant
   endDate: July 2015
   keywords:
