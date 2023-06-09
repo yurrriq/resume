@@ -1,8 +1,8 @@
 diff --git a/resume.yml b/resume-tweaked.yml
-index 93c3d84..ce55c36 100644
+index 93c3d84..7c6a3e8 100644
 --- a/resume.yml
 +++ b/resume-tweaked.yml
-@@ -1,334 +1,368 @@
+@@ -1,334 +1,369 @@
  ---
 +awards:
 +- awarder: University of Minnesota
@@ -202,7 +202,7 @@ index 93c3d84..ce55c36 100644
 -  - real-time
 -  - data-driven
 +    username: yurrriq
-+  website: http://ericb.me
++  website: https://blorg.ericb.me
 +certifications:
 +- issuer: The Linux Foundation
 +  endDate: Jan 2025
@@ -382,7 +382,7 @@ index 93c3d84..ce55c36 100644
 -  startDate: '2004-08-01'
 -  endDate: '2004-10-31'
 -  summary: My code passed W3C validation before it was cool.
-+  website: http://tech.mn/news/2013/08/21/know-this-nerd-meet-eric-bailey/
++  website: https://web.archive.org/web/20170314130038/http://tech.mn/news/2013/08/21/know-this-nerd-meet-eric-bailey/
  skills:
 -- name: Server-side Development
 -  level: Advanced
@@ -578,7 +578,7 @@ index 93c3d84..ce55c36 100644
 +  endDate: Oct 2018
 +  startDate: Nov 2012
 +  summary: |
-+    My contract work has included \hrefootnote{http://www.rfmoeller.com}{SQL
++    My contract work has included \hrefootnote{https://rfmoeller.com}{SQL
 +    security hole patching}, updating \hrefootnote{https://www.honeywell.com}{a
 +    bespoke kiosk web app} to work on IE8, porting an interactive Q\&A app from
 +    iOS to Android, a custom podcast app for iOS and Android,
@@ -629,10 +629,11 @@ index 93c3d84..ce55c36 100644
 +  # - Slack
 +  position: Software Engineer
 +  startDate: May 2014
++  # https://plink.love
 +  summary: |
-+    As half of the core engineering team at this
-+    \hrefootnote{https://plink.love}{social media startup}, I passionately wrote
-+    efficient, modular, well-tested code in an agile environment.
++    As half of the core engineering team at this social media startup, I
++    passionately wrote efficient, modular, well-tested code in an agile
++    environment.
 +- company: Transvoyant
 +  endDate: July 2015
 +  keywords:
