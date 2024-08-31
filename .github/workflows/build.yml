@@ -16,7 +16,7 @@ jobs:
         with:
           skip_adding_nixpkgs_channel: true
       - name: Cachix
-        uses: cachix/cachix-action@v10
+        uses: cachix/cachix-action@v15
         with:
           name: yurrriq
           skipPush: true
