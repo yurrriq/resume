@@ -1,12 +1,12 @@
 # This file originates from node2nix
 
-{stdenv, nodejs, python2, utillinux, libtool, runCommand, writeTextFile}:
+{ stdenv, nodejs, python2, utillinux, libtool, runCommand, writeTextFile }:
 
 let
   python = if nodejs ? python then nodejs.python else python2;
 
   # Create a tar wrapper that filters all the 'Ignoring unknown extended header keyword' noise
-  tarWrapper = runCommand "tarWrapper" {} ''
+  tarWrapper = runCommand "tarWrapper" { } ''
     mkdir -p $out/bin
 
     cat > $out/bin/tar <<EOF
@@ -37,26 +37,28 @@ let
       '';
     };
 
-  includeDependencies = {dependencies}:
-    stdenv.lib.optionalString (dependencies != [])
-      (stdenv.lib.concatMapStrings (dependency:
-        ''
-          # Bundle the dependencies of the package
-          mkdir -p node_modules
-          cd node_modules
+  includeDependencies = { dependencies }:
+    stdenv.lib.optionalString (dependencies != [ ])
+      (stdenv.lib.concatMapStrings
+        (dependency:
+          ''
+            # Bundle the dependencies of the package
+            mkdir -p node_modules
+            cd node_modules
 
-          # Only include dependencies if they don't exist. They may also be bundled in the package.
-          if [ ! -e "${dependency.name}" ]
-          then
-              ${composePackage dependency}
-          fi
+            # Only include dependencies if they don't exist. They may also be bundled in the package.
+            if [ ! -e "${dependency.name}" ]
+            then
+                ${composePackage dependency}
+            fi
 
-          cd ..
-        ''
-      ) dependencies);
+            cd ..
+          ''
+        )
+        dependencies);
 
   # Recursively composes the dependencies of a package
-  composePackage = { name, packageName, src, dependencies ? [], ... }@args:
+  composePackage = { packageName, src, dependencies ? [ ], ... }:
     ''
       DIR=$(pwd)
       cd $TMPDIR
@@ -103,7 +105,7 @@ let
       ${stdenv.lib.optionalString (builtins.substring 0 1 packageName == "@") "cd .."}
     '';
 
-  pinpointDependencies = {dependencies, production}:
+  pinpointDependencies = { dependencies, production }:
     let
       pinpointDependenciesFromPackageJSON = writeTextFile {
         name = "pinpointDependencies.js";
@@ -176,7 +178,7 @@ let
   # dependencies in the package.json file to the versions that are actually
   # being used.
 
-  pinpointDependenciesOfPackage = { packageName, dependencies ? [], production ? true, ... }@args:
+  pinpointDependenciesOfPackage = { packageName, dependencies ? [ ], production ? true, ... }:
     ''
       if [ -d "${packageName}" ]
       then
@@ -189,7 +191,7 @@ let
 
   # Extract the Node.js source code which is used to compile packages with
   # native bindings
-  nodeSources = runCommand "node-sources" {} ''
+  nodeSources = runCommand "node-sources" { } ''
     tar --no-same-owner --no-same-permissions -xf ${nodejs.src}
     mv node-* $out
   '';
@@ -313,8 +315,7 @@ let
     { name
     , packageName
     , version
-    , dependencies ? []
-    , buildInputs ? []
+    , buildInputs ? [ ]
     , production ? true
     , npmFlags ? ""
     , dontNpmInstall ? false
@@ -323,7 +324,8 @@ let
     , dontStrip ? true
     , unpackPhase ? "true"
     , buildPhase ? "true"
-    , ... }@args:
+    , ...
+    }@args:
 
     let
       forceOfflineFlag = if bypassCache then "--offline" else "--registry http://www.example.com";
@@ -425,8 +427,8 @@ let
     , packageName
     , version
     , src
-    , dependencies ? []
-    , buildInputs ? []
+    , dependencies ? [ ]
+    , buildInputs ? [ ]
     , production ? true
     , npmFlags ? ""
     , dontNpmInstall ? false
@@ -434,7 +436,8 @@ let
     , dontStrip ? true
     , unpackPhase ? "true"
     , buildPhase ? "true"
-    , ... }@args:
+    , ...
+    }@args:
 
     let
       forceOfflineFlag = if bypassCache then "--offline" else "--registry http://www.example.com";
@@ -530,7 +533,7 @@ let
 
       # Provide the dependencies in a development shell through the NODE_PATH environment variable
       inherit nodeDependencies;
-      shellHook = stdenv.lib.optionalString (dependencies != []) ''
+      shellHook = stdenv.lib.optionalString (dependencies != [ ]) ''
         export NODE_PATH=$nodeDependencies/lib/node_modules
       '';
     };
