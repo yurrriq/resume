@@ -3,33 +3,33 @@ name: Build PDF and commit to the gh-pages branch
 on:
   push:
     branches:
-    - main
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v3.0.2
-    - name: Install Nix
-      uses: cachix/install-nix-action@v17
-      with:
-        skip_adding_nixpkgs_channel: true
-    - name: Cachix
-      uses: cachix/cachix-action@v10
-      with:
-        name: yurrriq
-        skipPush: true
-    - name: Build PDF
-      run: |
-        nix build
-        mkdir site
-        cp -rv result/* site/
-    - name: Deploy to GitHub Pages
-      if: success()
-      uses: crazy-max/ghaction-github-pages@v2
-      with:
-        target_branch: gh-pages
-        build_dir: site
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checkout
+        uses: actions/checkout@v3.0.2
+      - name: Install Nix
+        uses: cachix/install-nix-action@v17
+        with:
+          skip_adding_nixpkgs_channel: true
+      - name: Cachix
+        uses: cachix/cachix-action@v10
+        with:
+          name: yurrriq
+          skipPush: true
+      - name: Build PDF
+        run: |
+          nix build
+          mkdir site
+          cp -rv result/* site/
+      - name: Deploy to GitHub Pages
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: gh-pages
+          build_dir: site
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

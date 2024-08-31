@@ -51,3 +51,4 @@ tccv-master/
 
 /result*
 /.direnv/
+/.pre-commit-config.yaml
