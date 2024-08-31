@@ -121,6 +121,7 @@ programming:
       - JavaScript
       - PHP
       - Python
+      - \hrefootnote{https://www.sagemath.org/}{SageMath}
   - fluency: < 5,000 SLoC
     languages:
       - \hrefootnote{http://wiki.portal.chalmers.se/agda}{Agda}
@@ -131,11 +132,11 @@ programming:
       - F$^\sharp$
       - \hrefootnote{https://www.gap-system.org/}{GAP}
       - OCaml
+      - Julia
       - Perl
       - \hrefootnote{https://www.r-project.org/}{R}
       - Ruby
       - Rust
-      - \hrefootnote{https://www.sagemath.org/}{SageMath}
     # - VB.NET
 publications:
   - name: Episode 59 - Eric Bailey
@@ -191,8 +192,23 @@ volunteer:
     website: https://web.archive.org/web/20041213172447/http://undeadart.org/
 work:
   - company: Sportradar
+    position: Platform Domain Architect
+    startDate: April 2022
+    summary: |
+      Starting April 2022, I transitioned into an architect role, handing over
+      the lead responsibilities of our expanded team.
+    keywords:
+      - Go
+      - Architecture
+      - CI/CD
+      - DevOps
+      - AWS
+      - Kubernetes
+      - \hrefootnote{https://nixos.org/nix/}{Nix}
+      - Terraform
+  - # company: Sportradar
     position: Lead Platform Engineer
-    # endDate: March 2021
+    endDate: April 2022
     startDate: July 2019
     summary: |
       As the first global
@@ -201,14 +217,12 @@ work:
       through policies and best practices I help design, I work to empower
       developers, encourage and facilitate frequent shipping of code, and enable
       sysadmins to maintain good sleep hygiene, across multiple time zones.  From
-      March 2021 to July 2022, I led a team of two, focusing further on providing
-      a solid PaaS to internal ``customers.''  From July 2022, I transitioned into
-      an architect role, handing over the lead responsibilities of our expanded
-      team.
+      March 2021 to April 2022, I led a team of two, focusing further on providing
+      a solid PaaS to internal ``customers.''
     keywords:
       # - Bash
       - Go
-      - \hrefootnote{https://nixos.org/nix/}{Nix}
+      - Nix
       - Terraform
       - Architecture
       - Compliance
@@ -350,22 +364,22 @@ work:
       As half of the core engineering team at this social media startup, I
       passionately wrote efficient, modular, well-tested code in an agile
       environment.
-  - company: Transvoyant
-    endDate: July 2015
-    keywords:
-      - ClojureScript
-      - CSS
-      - JSON
-      - React
-      - DevOps
-      - Modular
-      - Mobile
-      - REST
-    position: Web Developer
-    startDate: Nov 2014
-    summary: |
-      Building on a Java REST API, I spearheaded a new ClojureScript frontend,
-      with a user-customizable, data-driven UI, dynamic rendering, and
-      mobile-friendly drag-and-drop.
+  # - company: Transvoyant
+  #   endDate: July 2015
+  #   keywords:
+  #     - ClojureScript
+  #     - CSS
+  #     - JSON
+  #     - React
+  #     - DevOps
+  #     - Modular
+  #     - Mobile
+  #     - REST
+  #   position: Web Developer
+  #   startDate: Nov 2014
+  #   summary: |
+  #     Building on a Java REST API, I spearheaded a new ClojureScript frontend,
+  #     with a user-customizable, data-driven UI, dynamic rendering, and
+  #     mobile-friendly drag-and-drop.
 ---
 
