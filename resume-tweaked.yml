@@ -87,6 +87,7 @@ interests:
   - keywords:
       - Idris
       - Agda
+      - Awk
       - Coq
       - NuPRL
     name: Verified Programming
@@ -95,49 +96,55 @@ languages:
     language: Español
   - fluency: Grunnleggende ferdigheter
     language: Norsk
+  - fluency: Pivo, prosim. Hvala.
+    language: Slovenščina
+  - fluency: Baskunskaper
+    language: Svenska
 programming:
-  - fluency: \> 20,000 SLoC
+  - fluency: Advanced
     languages:
-      - \LaTeX
       - (Bourne) Shell
       - Clojure
-      - \hrefootnote{http://lfe.io/}{(Lisp Flavoured)} Erlang
       - Haskell
+      - \LaTeX
+      - \hrefootnote{http://lfe.io/}{(Lisp Flavoured)} Erlang
       - Lisp/Scheme (various)
-  - fluency: \> 10,000 SLoC
+  - fluency: Experienced
     languages:
       - HTML
+      - \hrefootnote{http://idris-lang.org}{Idris}
       - Java
       - \hrefootnote{http://lilypond.org/}{LilyPond}
       - make
-      - \hrefootnote{http://idris-lang.org}{Idris}
       - Objective-C
       - Swift
-  - fluency: \> 5,000 SLoC
+  - fluency: Intermediate # \vdots
     languages:
-      - CSS
       - Elixir
       - Go
-      - JavaScript
       - Julia
-      - PHP
       - Python
+      - Rust
       - \hrefootnote{https://www.sagemath.org/}{SageMath}
-  - fluency: < 5,000 SLoC
+  - fluency: Dangerous
     languages:
       - \hrefootnote{http://wiki.portal.chalmers.se/agda}{Agda}
       - C
-      - C\hspace{-.05em}\raisebox{.5ex}{\tiny $++$}
       - \hrefootnote{https://coq.inria.fr/}{Coq}
       - \hrefootnote{https://elm-lang.org/}{Elm}
       - F$^\sharp$
       - \hrefootnote{https://www.gap-system.org/}{GAP}
       - OCaml
+  - fluency: Familiar
+    languages:
+      - C\hspace{-.05em}\raisebox{.5ex}{\tiny $++$}
+      - CSS
+      - JavaScript
+      - PHP
       - Perl
       - \hrefootnote{https://www.r-project.org/}{R}
       - Ruby
-      - Rust
-    # - VB.NET
+      # - VB.NET
 publications:
   - name: Episode 59 - Eric Bailey
     publisher: Functional Geekery
