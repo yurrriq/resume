@@ -119,6 +119,7 @@ programming:
       - Elixir
       - Go
       - JavaScript
+      - Julia
       - PHP
       - Python
       - \hrefootnote{https://www.sagemath.org/}{SageMath}
@@ -132,7 +133,6 @@ programming:
       - F$^\sharp$
       - \hrefootnote{https://www.gap-system.org/}{GAP}
       - OCaml
-      - Julia
       - Perl
       - \hrefootnote{https://www.r-project.org/}{R}
       - Ruby
