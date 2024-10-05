@@ -1,8 +1,8 @@
 diff --git a/resume.yml b/resume-tweaked.yml
-index 50c3432..79c7cad 100644
+index 50c3432..a304b02 100644
 --- a/resume.yml
 +++ b/resume-tweaked.yml
-@@ -1,344 +1,391 @@
+@@ -1,344 +1,393 @@
  ---
 +awards:
 +  - awarder: University of Minnesota
@@ -26,6 +26,8 @@ index 50c3432..79c7cad 100644
        url: https://github.com/yurrriq
 -    - network: Twitter
        username: yurrriq
++    - network: LinkedIn
++      url: https://linkedin.com/in/ericbee
 +    - network: Twitter
        url: https://twitter.com/yurrriq
 -    - network: Stack Overflow

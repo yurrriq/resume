@@ -16,6 +16,8 @@ basics:
     - network: GitHub
       url: https://github.com/yurrriq
       username: yurrriq
+    - network: LinkedIn
+      url: https://linkedin.com/in/ericbee
     - network: Twitter
       url: https://twitter.com/yurrriq
       username: yurrriq
