@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.2.0
       - name: Install Nix
-        uses: cachix/install-nix-action@v29
+        uses: cachix/install-nix-action@v30
         with:
           skip_adding_nixpkgs_channel: true
       - name: Cachix
